@@ -5,3 +5,14 @@ h1 {
 .game {
     display: inline;
 }
+
+.upArrow {
+    margin-left: 41%;
+}
+.leftArrow {
+    margin-left: 25%;
+}
+.rightArrow {
+    margin-left: 15.5%;
+}
+
