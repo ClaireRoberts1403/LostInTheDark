@@ -21,3 +21,6 @@ h1 {
   height: auto;
   padding-left: 10%;
 }
+.hidden {
+    display: none;
+}
