@@ -1,18 +1,23 @@
 h1 {
-    color: red;
+  color: red;
 }
 
 .game {
-    display: inline;
+  display: inline;
 }
 
-.upOff {
-    margin-left: 41%;
+.up {
+  width: 40%;
+  height: auto;
+  padding-left: 30%;
 }
-.leftOff {
-    margin-left: 25%;
+.left {
+  width: 40%;
+  height: auto;
+  padding-left: 5%;
 }
-.rightOff {
-    margin-left: 15.5%;
+.right {
+  width: 40%;
+  height: auto;
+  padding-left: 10%;
 }
-
