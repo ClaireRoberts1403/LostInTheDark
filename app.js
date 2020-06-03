@@ -86,3 +86,59 @@ function three() {
 }
 
 
+
+function clearColor() {
+  up.style.backgroundColor = "transparent";
+  left.style.backgroundColor = "transparent";
+  right.style.backgroundColor = "transparent";
+  
+}
+
+function flashColor() {
+  up.style.backgroundColor = "yellow";
+  left.style.backgroundColor = "yellow";
+  right.style.backgroundColor = "yellow";
+ 
+}
+
+up.addEventListener('click', () => {
+  if (on) {
+    playerOrder.push(1);
+    check();
+    one();
+    if(!win) {
+      setTimeout(() => {
+        clearColor();
+      }, 300);
+    }
+  }
+})
+
+left.addEventListener('click', () => {
+  if (on) {
+    playerOrder.push(2);
+    check();
+    two();
+    if(!win) {
+      setTimeout(() => {
+        clearColor();
+      }, 300);
+    }
+  }
+})
+
+right.addEventListener('click', () => {
+  if (on) {
+    playerOrder.push(3);
+    check();
+    three();
+    if(!win) {
+      setTimeout(() => {
+        clearColor();
+      }, 300);
+    }
+  }
+})
+
+
+
