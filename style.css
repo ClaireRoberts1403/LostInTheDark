@@ -3,6 +3,7 @@
 body {
   font-family: "Creepster", cursive;
   background-image: img src = "/images/Lost.jpg";
+  font-size: 30px;
 }
 
 h1 {
@@ -12,18 +13,23 @@ h1 {
 }
 
 .card-text {
-  font-size: 50px;
+  font-size: 100px;
 }
 
-.toggle {
-  margin-left: 20px;
-  margin-right: 20px;
+.card-img-top {
+    height: auto;
+    width: 100px;
+}
+
+.middle {
+    width: 100px;
 }
 
 .button {
   border-radius: 90%;
-  font-size: 20px;
+  font-size: 50px;
   background-color: white;
+  text-align: center;
 }
 
 #switches {
