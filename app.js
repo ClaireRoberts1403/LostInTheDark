@@ -142,3 +142,40 @@ right.addEventListener('click', () => {
 
 
 
+function check() {
+  if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
+    good = false;
+
+  if (playerOrder.length == 5 && good) {
+    winGame();
+  }
+
+  if (good == false) {
+    flashColor();
+    turnCounter.innerHTML = "GAMEOVER!";
+    setTimeout(() => {
+      turnCounter.innerHTML = level;
+      clearColor();
+
+    }, 800);
+
+    noise = false;
+  }
+
+  if (level == playerOrder.length && good && !win) {
+    level++;
+    playerOrder = [];
+    compTurn = true;
+    flash = 0;
+    turnCounter.innerHTML = level;
+    intervalId = setInterval(gameTurn, 800);
+  }
+
+}
+
+function winGame() {
+  flashColor();
+  turnCounter.innerHTML = "WIN!";
+  
+  win = true;
+}
