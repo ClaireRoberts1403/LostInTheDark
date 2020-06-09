@@ -22,21 +22,47 @@
   </head>
 
   <body>
-    <header>
+    <header class="navbar">
       <div class="highScore">HighScore:</div>
-      <div class="scoreCount">Score:</div>
+      <div class="scoreCount">Score: </div>
     </header>
     <h1 class="title">Lost in the Dark</h1>
     <!-- story text box here -->
-    <div class="textbox"></div>
-    <!--start button to link to game page fade into-->
-    <button class="startButton"><a href="game.html">Start</a></button>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
 
-    <footer>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>You awake lying on the cold dirty floor.......Where are you?.....How did you get here?.....You don't remember. You can't remember......Anything.</p> 
+        <p>Your heart begins to race. Its so dark. You need to get out.</p>
+        <p>Images flash before your eyes. Directions. You need to follow them. You need to run!</p>
+      </div>
+      <div class="modal-footer">
+            <button type="button" class="btn bg-dark text-white startButton"><a href="game.html">Start Game</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+    <footer class="navbar">
       <!-- help page to be added later to explain game instrustions-->
       <div class="help">Help</div>
       <div class="levelCount">Level:</div>
     </footer>
   </body>
   <script src="app.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </html>

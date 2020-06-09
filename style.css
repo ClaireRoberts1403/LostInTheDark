@@ -7,15 +7,18 @@ html {
 
 body {
   font-family: "Creepster", cursive;
- /* background-image: url("/images/Lost.jpg");*/
+  background-image: url("/images/Lost.jpg");
   font-size: 150%;
   max-width: 100%;
+  color: rgb(51, 18, 116);
+  
+
 }
 
 h1 {
   font-size: 250%;
   text-align: center;
-  color: rgb(51, 18, 116);
+  
 }
 
 .card {
