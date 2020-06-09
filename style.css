@@ -46,12 +46,10 @@ h1 {
 .level {
     text-align: right;
     margin: 30px;
-    color: black;
-}
+  }
 
 
 #level {
-  color: black;
   height: 30px;
   width: 50px;
   margin: 20px;

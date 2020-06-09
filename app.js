@@ -12,8 +12,8 @@ const turnCounter = document.querySelector("#level");
 const up = document.querySelector("#up");
 const left = document.querySelector("#left");
 const right = document.querySelector("#right");
-
 const startButton = document.querySelector("#startGame");
+
 
 startButton.addEventListener('click', () => {
       play();

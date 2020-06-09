@@ -15,6 +15,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/90ed803b97.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <link />
 
@@ -22,18 +23,22 @@
   </head>
 
   <body>
+ 
+  <embed src="/audio/darkOmen.mp3" autostart="true" loop="true" hidden="true">
+  <i class="fas fa-volume-off" id="mute"></i>
+<!--<i class="fas fa-volume-mute"></i>-->
+  
     <header class="navbar">
       <div class="highScore">HighScore:</div>
       <div class="scoreCount">Score: </div>
     </header>
     <h1 class="title">Lost in the Dark</h1>
-    <!-- story text box here -->
     <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
+  Begin
 </button>
 
-<!-- Modal -->
+<!-- story text box/modal here -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -43,7 +48,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <p>You awake lying on the cold dirty floor.......Where are you?.....How did you get here?.....You don't remember. You can't remember......Anything.</p> 
+        <p>You awake...lying on the cold dirty floor.......Where are you?.....How did you get here?.....You don't remember. You can't remember......Anything.</p> 
         <p>Your heart begins to race. Its so dark. You need to get out.</p>
         <p>Images flash before your eyes. Directions. You need to follow them. You need to run!</p>
       </div>

@@ -12,13 +12,13 @@
 
 	<title>Lost in the Dark</title>
  <audio id="clip1">
-  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
+  	<source src="/audio/forward.wav"></source>
   </audio>
   <audio id="clip2">
-  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
+  	<source src="/audio/left.wav"></source>
   </audio>
   <audio id="clip3">
-  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
+  	<source src="/audio/right.wav">
   </audio>
   
 </head>
@@ -38,12 +38,12 @@
   </div>
 <button class="button" id="startGame">Run!</button>
   
-  <footer>
-  <nav class="navbar">
   
+  <footer class="navbar">
+  <embed src="/audio/darkOmen.mp3" autostart="true" loop="true">
       <p class="level">
         Level
-      </p><div id="level"></div></nav>
+      </p><div id="level"></div>
       
     
     </footer>
