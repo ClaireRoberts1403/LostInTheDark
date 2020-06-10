@@ -14,7 +14,6 @@ const left = document.querySelector("#left");
 const right = document.querySelector("#right");
 const startButton = document.querySelector("#startGame");
 
-
 startButton.addEventListener('click', () => {
       play();
   }
@@ -64,7 +63,7 @@ function one() {
     audio.play();
   }
   noise = true;
-  up.style.backgroundColor = "yellow";
+  up.style.backgroundColor = "darkSlateBlue";
 }
 
 function two() {
@@ -73,7 +72,7 @@ function two() {
     audio.play();
   }
   noise = true;
-  left.style.backgroundColor = "yellow";
+  left.style.backgroundColor = "darkSlateBlue";
 }
 
 function three() {
@@ -82,7 +81,7 @@ function three() {
     audio.play();
   }
   noise = true;
-  right.style.backgroundColor = "yellow";
+  right.style.backgroundColor = "darkSlateBlue";
 }
 
 
@@ -95,9 +94,9 @@ function clearColor() {
 }
 
 function flashColor() {
-  up.style.backgroundColor = "yellow";
-  left.style.backgroundColor = "yellow";
-  right.style.backgroundColor = "yellow";
+  up.style.backgroundColor = "darkSlateBlue";
+  left.style.backgroundColor = "darkSlateBlue";
+  right.style.backgroundColor = "darkSlateBlue";
  
 }
 
@@ -179,3 +178,4 @@ function winGame() {
   
   win = true;
 }
+
