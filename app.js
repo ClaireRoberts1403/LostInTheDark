@@ -8,16 +8,18 @@ let intervalId;
 let noise = true;
 let win;
 
+
 const turnCounter = document.querySelector("#level");
 const up = document.querySelector("#up");
 const left = document.querySelector("#left");
 const right = document.querySelector("#right");
 const startButton = document.querySelector("#startGame");
+const highScore = document.querySelector("#highScore");
+const scoreCount = document.querySelector("#scoreCount");
 
-startButton.addEventListener('click', () => {
-      play();
-  }
-);
+startButton.addEventListener("click", () => {
+  play();
+});
 
 function play() {
   win = false;
@@ -26,6 +28,7 @@ function play() {
   flash = 0;
   intervalId = 0;
   level = 1;
+  score = 0;
   turnCounter.innerHTML = 1;
   good = true;
   for (var i = 0; i < 20; i++) {
@@ -33,7 +36,7 @@ function play() {
   }
   compTurn = true;
 
-  intervalId = setInterval(gameTurn, 800);
+  intervalId = setInterval(gameTurn, 500);
 }
 
 function gameTurn() {
@@ -53,7 +56,7 @@ function gameTurn() {
       if (order[flash] == 2) two();
       if (order[flash] == 3) three();
       flash++;
-    }, 200);
+    }, 100);
   }
 }
 
@@ -84,62 +87,57 @@ function three() {
   right.style.backgroundColor = "darkSlateBlue";
 }
 
-
-
 function clearColor() {
   up.style.backgroundColor = "transparent";
   left.style.backgroundColor = "transparent";
   right.style.backgroundColor = "transparent";
-  
 }
 
 function flashColor() {
   up.style.backgroundColor = "darkSlateBlue";
   left.style.backgroundColor = "darkSlateBlue";
   right.style.backgroundColor = "darkSlateBlue";
- 
 }
 
-up.addEventListener('click', () => {
+
+up.addEventListener("click", () => {
   if (on) {
     playerOrder.push(1);
     check();
     one();
-    if(!win) {
+    if (!win) {
       setTimeout(() => {
         clearColor();
-      }, 300);
+      }, 200);
     }
   }
-})
+});
 
-left.addEventListener('click', () => {
+left.addEventListener("click", () => {
   if (on) {
     playerOrder.push(2);
     check();
     two();
-    if(!win) {
+    if (!win) {
       setTimeout(() => {
         clearColor();
-      }, 300);
+      }, 200);
     }
   }
-})
+});
 
-right.addEventListener('click', () => {
+right.addEventListener("click", () => {
   if (on) {
     playerOrder.push(3);
     check();
     three();
-    if(!win) {
+    if (!win) {
       setTimeout(() => {
         clearColor();
-      }, 300);
+      }, 200);
     }
   }
-})
-
-
+});
 
 function check() {
   if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
@@ -155,8 +153,7 @@ function check() {
     setTimeout(() => {
       turnCounter.innerHTML = level;
       clearColor();
-
-    }, 800);
+    }, 200);
 
     noise = false;
   }
@@ -167,15 +164,13 @@ function check() {
     compTurn = true;
     flash = 0;
     turnCounter.innerHTML = level;
-    intervalId = setInterval(gameTurn, 800);
+    intervalId = setInterval(gameTurn, 600);
   }
-
 }
 
 function winGame() {
   flashColor();
   turnCounter.innerHTML = "WIN!";
-  
+
   win = true;
 }
-
