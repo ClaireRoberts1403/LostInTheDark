@@ -37,47 +37,55 @@
   <body>
     <div class="gameSize">
       <header>
-        <nav class="navbar">
-          <span class="highScore">HighScore :</span>
-          <span class="scoreCount">Score : </span>
-          <p class="level">
-          Level :
-        </p>
-        <div id="level"></div>
-        </nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm"><span class="highScore">HighScore :</span></div>
+
+            <div class="col-sm"><span class="scoreCount">Score : </span></div>
+            <div class="col-sm">
+              <span class="level">
+                Level :
+              </span>
+            </div>
+            <div id="level"></div>
+          </div>
+        </div>
         <h1 class="title">Lost in the Dark</h1>
       </header>
 
-      <div class="container" id="game">
+      <div class="container">
         <div class="row">
           <div class="col-sm"></div>
-          <div class="upArrow col-sm">
-            <img src="/images/upArrow.png" id="upArrow" alt="UP" />
-            <div id="up">Forward</div>
+          <div class="col-sm">
+            <img src="/images/upArrow.png" id="up" alt="UP" />
           </div>
           <div class="col-sm"></div>
         </div>
         <div class="container" id="leftRight">
           <div class="row">
-            <div class="col-sm" id="left">
-              <img src="/images/leftArrow.png" alt="LEFT" />
-              Left</div>
+            <div class="col-sm">
+              <img src="/images/leftArrow.png" id="left" alt="LEFT" />
+            </div>
             <div class="col-sm"></div>
             <div class="col-sm">
-              <div class="rightArrow" id="right">
-                Right
-                <img src="/images/rightArrow.png" id="rightArrow" alt="RIGHT" />
-              </div>
+              <img src="/images/rightArrow.png" id="right" alt="RIGHT" />
             </div>
           </div>
         </div>
       </div>
-
-      <button class="button" id="startGame">Run!</button>
-
+      <div class="container">
+        <div class="row">
+          <div class="col-sm"></div>
+          <div class="col-sm">
+           <button type="button" class="btn bg-info text-dark button" id="startGame">Run!</button>
+          </div>
+          <div class="col-sm"></div>
+        </div>
+      </div>
       <footer class="navbar">
-        <embed src="/audio/darkOmen.mp3" autostart="true" loop="true" />
-     </footer>
+        <audio src="/audio/darkOmen.mp3" autoplay loop></audio>
+        <div class="help"><a href="help.html">Help</a></div>
+      </footer>
     </div>
   </body>
   <script src="app.js" charset="utf-8"></script>
