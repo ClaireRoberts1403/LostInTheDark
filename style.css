@@ -8,31 +8,18 @@ html {
 body {
   font-family: "Creepster", cursive;
   background-image: url("/images/Lost.jpg");
-  font-size: 150%;
   max-width: 100%;
-  color: rgb(51, 18, 116);
-  
+  color: whitesmoke;
+}
 
+.gameSize {
+    margin: 0 5%;
 }
 
 h1 {
-  font-size: 250%;
+  font-size: 500%;
   text-align: center;
   
-}
-
-.card {
-    border-color: transparent;
-}
-
-.card-text {
-  font-size: 250%;
-}
-
-.card-img-top {
-    height: auto;
-    width: 100px;
-   
 }
 
 .button {
@@ -45,24 +32,27 @@ h1 {
 
 .level {
     text-align: right;
-    margin: 30px;
-  }
+      }
 
 
 #level {
   height: 30px;
   width: 50px;
-  margin: 20px;
   }
 
+.game {margin: 0, 20px;
 
-#right {
-    margin-left: 25%;
 }
 
-#leftArrow {
-    margin-left:20%;
+.upArrow {
+    text-align: center;
 }
 
-#upArrow {
-    margin-left: 45%;
+.leftArrow {
+    text-align: left;
+}
+
+.rightArrow {
+    text-align: right;
+}
+
