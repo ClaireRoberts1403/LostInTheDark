@@ -32,10 +32,6 @@ h1 {
   
 }
 
-.navbar {
-    font-size: 150%;
-}
-
 .button {
   font-size: 50px;
   text-align: center;
@@ -113,14 +109,13 @@ span {
     text-align: center;
 }
 
-
 .help a {
     color: rgb(100, 137, 167);
+    margin-left: 300px;
+    font-size: 1.5em;
+   
 }
 
-.helpText a {
-    color: rgb(100, 137, 167);
-}
 
 .helpText {
     text-align: center;
