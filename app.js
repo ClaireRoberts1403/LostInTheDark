@@ -1,20 +1,20 @@
-let order = [];
-let playerOrder = [];
-let flash;
-let level;
-let score;
-let scoreHigh;
-let good;
-let compTurn;
-let intervalId;
-let noise = true;
-let win;
-let saveHigh;
+let order = []; /*order of sequence*/
+let playerOrder = []; /*order entered by player*/
+let flash; /*the flash of which direction is in play*/
+let level; /*level*/
+let score; /**score*/
+let scoreHigh; /**highscore*/
+let good; /**if sequence is correct*/
+let compTurn;/**the computers turn*/
+let intervalId;/**time in between truns*/
+let noise = true;/**sounds made when flashing and being pressed*/
+let win;/**if player reaches level 50*/
+let saveHigh; /**save highscore*/
 
 const turnCounter = document.querySelector("#level");
-const up = document.querySelector("#up");
-const left = document.querySelector("#left");
-const right = document.querySelector("#right");
+const up = document.querySelector("#up");/**up arrow*/
+const left = document.querySelector("#left");/**left arrow*/
+const right = document.querySelector("#right");/**right arrow*/
 const startButton = document.querySelector("#startGame");
 const currentScore = document.querySelector("#scoreCount");
 const currentHighScore = document.querySelector("#highScore");
@@ -23,7 +23,7 @@ const currentHighScore = document.querySelector("#highScore");
 startButton.addEventListener("click", () => {
   play();
 });
-
+/**game play at its start*/
 function play() {
   win = false;
   order = [];
@@ -32,7 +32,7 @@ function play() {
   intervalId = 0;
   level = 1;
   score = 0;
-  
+  /**Highscore saved on local storage*/
   if (score > scoreHigh) {
                 scoreHigh = score;
                 localStorage.setItem(saveHigh, scoreHigh);
@@ -49,7 +49,7 @@ function play() {
 
   intervalId = setInterval(gameTurn, 500);
 }
-
+/**game turn sequence of event and outputs*/
 function gameTurn() {
   on = false;
 
@@ -70,7 +70,7 @@ function gameTurn() {
     }, 100);
   }
 }
-
+/**up arrow*/
 function one() {
   if (noise) {
     let audio = document.getElementById("clip1");
@@ -79,7 +79,7 @@ function one() {
   noise = true;
   up.style.backgroundColor = "darkSlateBlue";
 }
-
+/**left arrow*/
 function two() {
   if (noise) {
     let audio = document.getElementById("clip2");
@@ -88,7 +88,7 @@ function two() {
   noise = true;
   left.style.backgroundColor = "darkSlateBlue";
 }
-
+/**right arrow*/
 function three() {
   if (noise) {
     let audio = document.getElementById("clip3");
@@ -97,20 +97,20 @@ function three() {
   noise = true;
   right.style.backgroundColor = "darkSlateBlue";
 }
-
+/**to reset after flashcolor*/
 function clearColor() {
   up.style.backgroundColor = "transparent";
   left.style.backgroundColor = "transparent";
   right.style.backgroundColor = "transparent";
 }
-
+/**to show user that arrow is active*/
 function flashColor() {
   up.style.backgroundColor = "darkSlateBlue";
   left.style.backgroundColor = "darkSlateBlue";
   right.style.backgroundColor = "darkSlateBlue";
 }
 
-
+/**to listen for user input*/
 up.addEventListener("click", () => {
   if (on) {
     playerOrder.push(1);
@@ -149,7 +149,7 @@ right.addEventListener("click", () => {
     }
   }
 });
-
+/**to check if user is correct or not*/
 function check() {
   if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
     good = false;
@@ -180,7 +180,7 @@ function check() {
     intervalId = setInterval(gameTurn, 600);
   }
 
- 
+ /**saving highscore to local storage and get item*/
   if (score > scoreHigh) {
       scoreHigh = score;
       currentHighScore.innerHTML = scoreHigh;
@@ -195,11 +195,15 @@ function check() {
             }
 
 
-
+/**win game funciton*/
 function winGame() {
   flashColor();
   turnCounter.innerHTML = "WIN!";
 
   win = true;
 }
+
+
+
+
 

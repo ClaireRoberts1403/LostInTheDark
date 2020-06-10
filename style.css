@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
 
 html {
-    max-width: 100%;
-    overflow: hidden;
-    height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+  height: 100vh;
 }
 
 body {
@@ -14,113 +14,106 @@ body {
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 a:hover {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 .gameSize {
-    margin: 0 20%;
+  margin: 0 20%;
 }
 
 h1 {
   font-size: 500%;
   text-align: center;
   color: rgb(73, 3, 185);
-  
 }
+
+span {
+  font-size: 1.5em;
+}
+
+/*button stylings*/
 
 .button {
   font-size: 50px;
   text-align: center;
   border: none;
   text-decoration: none;
- 
 }
 
 .beginButton {
-    margin-top: 20%;
-    margin-left: 45%;
-    font-size: 200%;
-    border: none;
-    text-decoration: none;
+  margin-top: 20%;
+  margin-left: 45%;
+  font-size: 200%;
+  border: none;
+  text-decoration: none;
 }
 
 .startButton {
-    margin-left: 45%;
-    font-size: 100%;
-    border: none;
-    text-decoration: none;
+  margin-left: 45%;
+  font-size: 100%;
+  border: none;
+  text-decoration: none;
 }
 
-
-span {
-    font-size:1.5em;
-}
-
-.level {
-    text-align: right;
-      }
-
-#level {
-  height: 30px;
-  width: 50px;
-  }
+/*modal*/
 
 .storyModal {
-    border: none;
-    background-image: url("/images/Lost.jpg");
+  border: none;
+  background-image: url("/images/Lost.jpg");
 }
 
 .modal-content {
-    background-color: black;
-    border: none;
-    font-size: 1.5em;
-
+  background-color: black;
+  border: none;
+  font-size: 1.5em;
 }
 .close {
-    color:rgb(100, 137, 167);
-    border: none;
-    text-shadow: none;
+  color: rgb(100, 137, 167);
+  border: none;
+  text-shadow: none;
 }
 
 .modal-header {
-    border: none;
+  border: none;
 }
 
 .modal-footer {
-    border:none;
+  border: none;
+}
+/*game container*/
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.container {
-    padding-left: 5%;
-    padding-right: 5%;
-}
+/*arrows*/
 
 #up {
-    text-align: center;
+  text-align: center;
 }
 #left {
-    text-align: center;
+  text-align: center;
 }
 #right {
-    text-align: center;
+  text-align: center;
 }
+
+/* help html*/
 
 .help a {
-    color: rgb(100, 137, 167);
-    margin-left: 300px;
-    font-size: 1.5em;
-   
+  color: rgb(100, 137, 167);
+  margin-left: 300px;
+  font-size: 1.5em;
 }
 
-
 .helpText {
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: 20px;
-    letter-spacing: 0.05em;
-    word-spacing: 0.2em;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 20px;
+  letter-spacing: 0.05em;
+  word-spacing: 0.2em;
 }
