@@ -3,6 +3,7 @@ let playerOrder = [];
 let flash;
 let level;
 let score;
+let scoreHigh;
 let good;
 let compTurn;
 let intervalId;
@@ -30,8 +31,10 @@ function play() {
   intervalId = 0;
   level = 1;
   score = 0;
+  scoreHigh = 10;
   turnCounter.innerHTML = 1;
   currentScore.innerHTML = 0;
+  currentHighScore.innerHTML = 10;
   good = true;
   for (var i = 0; i < 20; i++) {
     order.push(Math.floor(Math.random() * 3) + 1);
@@ -169,6 +172,11 @@ function check() {
     turnCounter.innerHTML = level;
     currentScore.innerHTML = score;
     intervalId = setInterval(gameTurn, 600);
+  }
+
+  if (score > scoreHigh) {
+      scoreHigh = score;
+      currentHighScore.innerHTML = scoreHigh;
   }
 }
 
