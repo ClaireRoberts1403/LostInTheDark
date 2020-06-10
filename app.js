@@ -9,7 +9,7 @@ let compTurn;
 let intervalId;
 let noise = true;
 let win;
-
+let saveHigh;
 
 const turnCounter = document.querySelector("#level");
 const up = document.querySelector("#up");
@@ -18,6 +18,7 @@ const right = document.querySelector("#right");
 const startButton = document.querySelector("#startGame");
 const currentScore = document.querySelector("#scoreCount");
 const currentHighScore = document.querySelector("#highScore");
+ 
 
 startButton.addEventListener("click", () => {
   play();
@@ -31,10 +32,15 @@ function play() {
   intervalId = 0;
   level = 1;
   score = 0;
-  scoreHigh = 10;
+  
+  if (score > scoreHigh) {
+                scoreHigh = score;
+                localStorage.setItem(saveHigh, scoreHigh);
+            }
+
   turnCounter.innerHTML = 1;
   currentScore.innerHTML = 0;
-  currentHighScore.innerHTML = 10;
+  currentHighScore.innerHTML = scoreHigh;
   good = true;
   for (var i = 0; i < 20; i++) {
     order.push(Math.floor(Math.random() * 3) + 1);
@@ -174,11 +180,21 @@ function check() {
     intervalId = setInterval(gameTurn, 600);
   }
 
+ 
   if (score > scoreHigh) {
       scoreHigh = score;
       currentHighScore.innerHTML = scoreHigh;
   }
 }
+
+ let scoreSave = localStorage.getItem(saveHigh);
+            if (scoreSave == null) {
+                scoreHigh = 0;
+            } else {
+                scoreHigh = parseInt(scoreSave);
+            }
+
+
 
 function winGame() {
   flashColor();
