@@ -2,6 +2,7 @@ let order = [];
 let playerOrder = [];
 let flash;
 let level;
+let score;
 let good;
 let compTurn;
 let intervalId;
@@ -14,8 +15,8 @@ const up = document.querySelector("#up");
 const left = document.querySelector("#left");
 const right = document.querySelector("#right");
 const startButton = document.querySelector("#startGame");
-const highScore = document.querySelector("#highScore");
-const scoreCount = document.querySelector("#scoreCount");
+const currentScore = document.querySelector("#scoreCount");
+const currentHighScore = document.querySelector("#highScore");
 
 startButton.addEventListener("click", () => {
   play();
@@ -30,6 +31,7 @@ function play() {
   level = 1;
   score = 0;
   turnCounter.innerHTML = 1;
+  currentScore.innerHTML = 0;
   good = true;
   for (var i = 0; i < 20; i++) {
     order.push(Math.floor(Math.random() * 3) + 1);
@@ -132,7 +134,7 @@ right.addEventListener("click", () => {
     check();
     three();
     if (!win) {
-      setTimeout(() => {
+        setTimeout(() => {
         clearColor();
       }, 200);
     }
@@ -160,10 +162,12 @@ function check() {
 
   if (level == playerOrder.length && good && !win) {
     level++;
+    score = score+10;
     playerOrder = [];
     compTurn = true;
     flash = 0;
     turnCounter.innerHTML = level;
+    currentScore.innerHTML = score;
     intervalId = setInterval(gameTurn, 600);
   }
 }
@@ -174,3 +178,4 @@ function winGame() {
 
   win = true;
 }
+
