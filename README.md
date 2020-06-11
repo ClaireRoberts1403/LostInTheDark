@@ -1,37 +1,55 @@
 # Lost in the Dark
 
 An atmospheric memory game. 
+You awake...lying on the cold dirty floor.......Where are you?.....How did you get here?.....You don't remember. You can't
+remember......Anything.	Images flash before your eyes. Directions. You need to follow them. You need to run!
  
 ## UX
  
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+Creating an atomopheric memory game using the game basis from the Simon Game(tm). Players enter a world with heart pumping music (90bpm).
+The colour scheme is dark and spooky. A back story tells the tale creating a sense on urgency to the game. Players then play the game which steadly 
+gets harder each level the pass. A score and highscore shows the player their progress. One wrong move and its game over. You are lost in the dark.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+A harder level "Really Lost in the Dark", was added to make the play more challenging.
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
 ## Features
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
  
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
+- The landing page (index.html). Introduces the player to the game with the game title. A dark forest background greets the player.
+The player then has options to begin, help, or highscores. If the player selects begin a modal pops up telling the back story. The player 
+can either exit or click on start game. This links the the game page (game.html)
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+- The game page (game.html). The music shifts to a movement/running piece. The player sees the three arrows and a begin button. Once clicked
+the arrows will flash, producing a unique sound for each arrow, in order that the player repeats back by clicking on the arrow. Each level completed succesfully earns ten point for the 
+score. And a highscore is save in local storage for the players time on the page. If the player presses an incorrect arrow. Gameover. A sweetalert pop 
+up occurs stating game over. It stays on screen for 3 seconds before the player is returned to the game screen.
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- The help page (help.html). A link at the bottom of both the game and landing page will bring the player to the help page with explains the game.
+
+- The highscore page (highscores.html) Is still being built but will display the top five scores and the players name in local storage.
+
+- The hardgame page (hardgame.html). To be 'really lost in the dark' players have the same game except with five arrows and no differnce between the sounds 
+on the flash of the arrow to make the game more challenging.
+
+Potential future features:
+A video landing page.
+To develop a movement game where players move the character in the directions shown.
 
 ### Features Left to Implement
-- Another feature idea
+- highscore board
 
 ## Technologies Used
-
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
-- .
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
+- A Simon! game following the online tutorial from freeCodeCamp.freeCodeCamp https://youtu.be/n_ec3eowFLQ
 - https://sweetalert.js.org/. Used for the alert system.
+- https://www.w3schools.com/howto - for some styling.
+- http://www.2createawebsite.com/enhance/adding-music.html - how to embed the music
+
 
 
 ## Testing
@@ -68,12 +86,21 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ## Credits
 
+CodeInstitute - This is my Milestone2 project on interactive frontend development.
+
+A Simon! game following the online tutorial from freeCodeCamp.freeCodeCamp https://youtu.be/n_ec3eowFLQ
+
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- All text was written by myself and completely made up.
 
 ### Media
-- The photos used in this site were obtained from ...
-
+- The background photo used in this site was obtained from pinterest via google image search - used without permission.
+- https://www.stickpng.com/ - for arrow image - then resized and rotated by myself.
+- https://elements.envato.com/ - for sounds and music - licenses are saved in code file licenses.
 ### Acknowledgements
 
-- I received inspiration for this project from X
+From starting this tutorial on JavaScript games I was inspired to do a game for my milestone2 project.
+https://www.youtube.com/watch?v=lhNdUVh3qCc
+
+I struggled with this project after taking some time out due to my current job taking a lot for hours out my week due to the coronavirus crisis.
+However, I enjoyed the challenge of trying to figure it all out and feel like I have learnt more in the process.
