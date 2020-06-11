@@ -210,8 +210,11 @@ function winGame() {
 }
 
 /**gameover function*/
+
+
 function gameover() {
-    turnCounter.innerHTML = "GAMEOVER!";
+    turnCounter.innerHTML = "!";
+    swal({title: "GAME OVER!", text: "YOU ARE LOST IN THE DARK", button: false, timer:3000})
         lose = true;
     }
 

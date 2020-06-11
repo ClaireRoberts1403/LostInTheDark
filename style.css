@@ -109,7 +109,27 @@ span {
   text-align: center;
 }
 
-/*footer linke*/
+/*game over swal*/
+.swal-modal {
+  background-color: rgba(82, 26, 145, 0.90);
+  border: 3px solid white;
+}
+
+.swal-title {
+  margin: 0px;
+  font-size: 100px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+  margin-bottom: 28px;
+}
+
+.swal-text {
+  font-size: 40px;
+  padding: 17px;
+  margin: 22px;
+  text-align: center;
+}
+
+/*footer links*/
 
 .help a {
   margin-left: 300px;
