@@ -12,7 +12,7 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<link rel="stylesheet" media="screen and (min-width: 900px)" href="largeScreen.css">
+	<link rel="stylesheet" media="screen and (min-width: 600px)" href="largeScreen.css">
 <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallScreen.css">
 	<link />
 
@@ -25,7 +25,7 @@
 		<div class="form-inline highScoreInput">
 			<div class="form-group mx-sm-3 mb-2">
 				<div>
-					<p id="name"><input type="text" placeholder ="Enter Name Here"/></p>
+					<p value = "name" id="name"><input type="text" placeholder ="Enter Name Here"/></p>
 				</div>
                 
 				<div class="form-group mx-sm-3 mb-2">
@@ -38,7 +38,7 @@
                             type="submit"
                             class="btn bg-info text-dark submitButton"
                             id="saveHighScore"
-                            onclick="saveHighScore(event)">Submit</button>
+                            >Submit</button>
 				</div>
 			</div>
 		</div>

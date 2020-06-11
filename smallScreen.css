@@ -46,11 +46,18 @@ span {
   text-align: center;
   border: none;
   text-decoration: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .beginButton {
   margin-top: 20%;
-  margin-left: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   font-size: 200%;
   border: none;
   text-decoration: none;
@@ -99,17 +106,24 @@ span {
 /*arrows*/
 
 #up {
-  text-align: center;
-  margin: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   
 }
 #left {
-  text-align: left;
-  margin: 0;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
+
 #right {
-  text-align: right;
-  margin: 0;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .spare {
@@ -119,6 +133,7 @@ span {
 #leftRight {
     flex-wrap: nowrap;
 }
+
 
 /*game over swal*/
 .swal-modal {
@@ -155,10 +170,11 @@ span {
 /* help page*/
 .helpText {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.1em;
   margin-top: 20px;
   letter-spacing: 0.05em;
   word-spacing: 0.2em;
+  border: 5px;
 }
 
 /*HighScore*/
@@ -166,11 +182,10 @@ span {
 .highScoreInput {
     display: inline-block;
     margin-top: 20px;
-    font-size: 150%;
+    font-size: 100%;
 }
 
 .submitButton {
-  margin-left: 300%;
   font-size: 100%;
   border: none;
   text-decoration: none;

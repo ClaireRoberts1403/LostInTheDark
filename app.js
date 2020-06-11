@@ -202,6 +202,13 @@ function check() {
 
 
   /**Saving high score to highscore leader board */          
+let saveHighScore = "#saveHighScore";
+localStorage.getElementById = "saveHigh";
+localStorage.getElementById = "name";
+localStorage.setItem('name', savename);
+localStorage.setItem('saveHighScore', savescore);
+
+
 
 
 
