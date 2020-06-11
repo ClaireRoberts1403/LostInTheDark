@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: inherit;
+  color: #17a2b8;
   text-decoration: none;
 }
 a:hover {
   text-decoration: none;
-  color: inherit;
+  color: #148192;
 }
 .gameSize {
   margin: 0 20%;
@@ -70,6 +70,8 @@ span {
   background-color: black;
   border: none;
   font-size: 1.5em;
+  letter-spacing: 0.05em;
+  word-spacing: 0.2em;
 }
 .close {
   color: rgb(100, 137, 167);
@@ -102,14 +104,19 @@ span {
   text-align: center;
 }
 
-/* help html*/
+/*footer linke*/
 
 .help a {
-  color: rgb(100, 137, 167);
   margin-left: 300px;
   font-size: 1.5em;
 }
 
+.highScoreLink a {
+  margin-right: 300px;
+  font-size: 1.5em;
+}
+
+/* help page*/
 .helpText {
   text-align: center;
   font-size: 1.5em;
