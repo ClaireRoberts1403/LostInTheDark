@@ -22,28 +22,27 @@ a:hover {
   color: #148192;
 }
 .gameSize {
-  margin: 0 20%;
+  margin: 0 10%;
 }
 
 h1 {
-  font-size: 500%;
   text-align: center;
   color: rgb(73, 3, 185);
 }
 
 .title {
     margin-top: 15%;
-    font-size: 600%;
+    font-size: 400%;
 }
 
 span {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 /*button stylings*/
 
 .button {
-  font-size: 50px;
+  font-size: 20px;
   text-align: center;
   border: none;
   text-decoration: none;
@@ -51,7 +50,7 @@ span {
 
 .beginButton {
   margin-top: 20%;
-  margin-left: 45%;
+  margin-left: 35%;
   font-size: 200%;
   border: none;
   text-decoration: none;
@@ -74,7 +73,7 @@ span {
 .modal-content {
   background-color: black;
   border: none;
-  font-size: 1.5em;
+  font-size: 1em;
   letter-spacing: 0.05em;
   word-spacing: 0.2em;
 }
@@ -101,12 +100,24 @@ span {
 
 #up {
   text-align: center;
+  margin: 0;
+  
 }
 #left {
-  text-align: center;
+  text-align: left;
+  margin: 0;
 }
 #right {
-  text-align: center;
+  text-align: right;
+  margin: 0;
+}
+
+.spare {
+    display: none;
+}
+
+#leftRight {
+    flex-wrap: nowrap;
 }
 
 /*game over swal*/
@@ -132,12 +143,12 @@ span {
 /*footer links*/
 
 .help a {
-  margin-left: 300px;
+  margin-left: 10px;
   font-size: 1.5em;
 }
 
 .highScoreLink a {
-  margin-right: 300px;
+  margin-right: 10px;
   font-size: 1.5em;
 }
 
@@ -148,4 +159,28 @@ span {
   margin-top: 20px;
   letter-spacing: 0.05em;
   word-spacing: 0.2em;
+}
+
+/*HighScore*/
+
+.highScoreInput {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 150%;
+}
+
+.submitButton {
+  margin-left: 300%;
+  font-size: 100%;
+  border: none;
+  text-decoration: none;
+}
+
+.table {
+    color:inherit;
+    text-align: center;
+}
+
+.leagueTable {
+    font-size: 120%;
 }

@@ -12,7 +12,8 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" media="screen and (min-width: 900px)" href="largeScreen.css">
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="smallScreen.css">
 	<link />
 
 	<title>Lost in the Dark</title>
@@ -41,20 +42,20 @@
 			<h1>Lost in the Dark</h1>
 		</header>
 		<!--Game made of containers-->
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm"></div>
-				<div class="col-sm">
+				<div class="col-sm spare"></div>
+				<div class="col-sm arrow">
 					<img src="/images/upArrow.png" id="up" alt="UP" />
           </div>
-					<div class="col-sm"></div>
+					<div class="col-sm spare"></div>
 				</div>
-				<div class="container" id="leftRight">
-					<div class="row">
+				<div class="container-fluid">
+					<div class="row" id="leftRight">
 						<div class="col-sm">
 							<img src="/images/leftArrow.png" id="left" alt="LEFT" />
             </div>
-							<div class="col-sm"></div>
+							<div class="col-sm spare"></div>
 							<div class="col-sm">
 								<img src="/images/rightArrow.png" id="right" alt="RIGHT" />
             </div>

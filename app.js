@@ -200,17 +200,8 @@ function check() {
                 scoreHigh = parseInt(scoreSave);
             }
 
-const name = document.getElementById('#name');
 
-name.addEventListener('keyup', () => {
-    console.log("name.value");
-})
-
-  saveScore = (e) => {
-      console.log("clicked save");
-      e.preventDefault();
-  };          
-
+  /**Saving high score to highscore leader board */          
 
 
 
