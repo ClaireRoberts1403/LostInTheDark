@@ -69,6 +69,29 @@
 							<div class="col-sm"></div>
 						</div>
 					</div>
+					<!-- gameover modal-->
+					<div class="modal fade gameOverModal trigger" id="gameOverModal" tabindex="-1" role="dialog"
+						aria-labelledby="gameOverModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+								</div>
+								<div class="modal-body">
+									<h1>GAMEOVER!</h1>
+									<br>
+									<h1>You are lost in the dark!</h1>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="close btn bg-dark text-info startButton" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">Try again?</span>
+                                    </button>
+								</div>
+							</div>
+						</div>
+					</div>
 					<!--Link to help information in footer-->
 					<footer class="navbar fixed-bottom">
 						<audio src="/audio/darkOmen.mp3" autoplay loop></audio>
@@ -89,4 +112,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 	integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 </script>
+
 </html>

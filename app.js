@@ -10,6 +10,7 @@ let intervalId;/**time in between truns*/
 let noise = true;/**sounds made when flashing and being pressed*/
 let win;/**if player reaches level 50*/
 let saveHigh; /**save highscore*/
+let lose;
 
 const turnCounter = document.querySelector("#level");
 const up = document.querySelector("#up");/**up arrow*/
@@ -18,7 +19,7 @@ const right = document.querySelector("#right");/**right arrow*/
 const startButton = document.querySelector("#startGame");
 const currentScore = document.querySelector("#scoreCount");
 const currentHighScore = document.querySelector("#highScore");
- 
+
 
 startButton.addEventListener("click", () => {
   play();
@@ -26,6 +27,7 @@ startButton.addEventListener("click", () => {
 /**game play at its start*/
 function play() {
   win = false;
+  lose = [];
   order = [];
   playerOrder = [];
   flash = 0;
@@ -159,13 +161,13 @@ function check() {
   }
 
   if (good == false) {
-    flashColor();
-    turnCounter.innerHTML = "GAMEOVER!";
-    setTimeout(() => {
+     flashColor();
+    
+      setTimeout(() => {
       turnCounter.innerHTML = level;
       clearColor();
-    }, 200);
-
+    }, 1000);
+    gameover();
     noise = false;
   }
 
@@ -185,6 +187,10 @@ function check() {
       scoreHigh = score;
       currentHighScore.innerHTML = scoreHigh;
   }
+
+    function highScoreShow() {
+        modal.classList.toggle("show-modal");
+    }
 }
 
  let scoreSave = localStorage.getItem(saveHigh);
@@ -195,7 +201,7 @@ function check() {
             }
 
 
-/**win game funciton*/
+/**win game function*/
 function winGame() {
   flashColor();
   turnCounter.innerHTML = "WIN!";
@@ -203,7 +209,9 @@ function winGame() {
   win = true;
 }
 
-
-
-
+/**gameover function*/
+function gameover() {
+    turnCounter.innerHTML = "GAMEOVER!";
+        lose = true;
+    }
 
