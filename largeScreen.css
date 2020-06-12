@@ -111,6 +111,7 @@ span {
   margin-left: auto;
   margin-right: auto;
   width: 150px;
+  cursor: pointer;
   
 }
 #left {
@@ -118,6 +119,7 @@ span {
   margin-left: auto;
   margin-right: auto;
   width: 150px;
+  cursor: pointer;
 }
 
 #right {
@@ -125,6 +127,7 @@ span {
   margin-left: auto;
   margin-right: auto;
   width: 150px;
+  cursor: pointer;
 }
 /*game over swal*/
 .swal-modal {
