@@ -42,8 +42,8 @@ span {
 
 /*button stylings*/
 
-.button {
-  font-size: 50px;
+.runButton {
+  font-size: 40px;
   text-align: center;
   border: none;
   text-decoration: none;
@@ -75,7 +75,7 @@ span {
 
 .storyModal {
   border: none;
-  background-image: url("/images/Lost.jpg");
+  background-image: url("../images/Lost.jpg");
 }
 
 .modal-content {
@@ -156,6 +156,10 @@ span {
 .highScoreLink a {
   margin-right: 300px;
   font-size: 1.5em;
+}
+
+.hard {
+    text-align: center;
 }
 
 /* help page*/

@@ -72,6 +72,8 @@ You should also mention in this section any interesting bugs or problems you dis
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
+- First test onto other browsers via github host showed no audio or images. Easy fix but didnt show in previews in gitpod.
+
 ## Deployment
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).

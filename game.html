@@ -18,13 +18,13 @@
 
 	<title>Lost in the Dark</title>
 	<audio id="clip1">
-		<source src="/audio/forward.wav" />
+		<source src="../audio/forward.wav" />
 	</audio>
 	<audio id="clip2">
-		<source src="/audio/left.wav" />
+		<source src="../audio/left.wav" />
 	</audio>
 	<audio id="clip3">
-		<source src="/audio/right.wav" />
+		<source src="../audio/right.wav" />
 	</audio>
 </head>
 
@@ -46,18 +46,18 @@
 			<div class="row">
 				<div class="col-sm spare"></div>
 				<div class="col-sm arrow">
-					<img src="/images/upArrow.png" id="up" alt="UP" />
+					<img src="../images/upArrow.png" id="up" alt="UP" />
           </div>
 					<div class="col-sm spare"></div>
 				</div>
 				<div class="container-fluid">
 					<div class="row" id="leftRight">
 						<div class="col-sm">
-							<img src="/images/leftArrow.png" id="left" alt="LEFT" />
+							<img src="../images/leftArrow.png" id="left" alt="LEFT" />
             </div>
 							<div class="col-sm spare"></div>
 							<div class="col-sm arrow">
-								<img src="/images/rightArrow.png" id="right" alt="RIGHT" />
+								<img src="../images/rightArrow.png" id="right" alt="RIGHT" />
             </div>
 							</div>
 						</div>
@@ -66,15 +66,16 @@
 						<div class="row">
 							<div class="col-sm"></div>
 							<div class="col-sm">
-								<button type="button" class="btn bg-info text-dark button" id="startGame">Run!</button>
+								<button type="button" class="btn bg-info text-dark runButton" id="startGame">Run!</button>
 							</div>
 							<div class="col-sm"></div>
 						</div>
 					</div>
 					<!--Link to help information in footer-->
 					<footer class="navbar fixed-bottom">
-						<audio src="/audio/darkOmen.mp3" autoplay loop></audio>
+						<audio src="../audio/darkOmen.mp3" autoplay loop></audio>
 						<div class="help"><a href="help.html">Help</a></div>
+                        <div class="hard"><a href="hardgame.html">Too easy? Get Really Lost in the Dark</a></div>
 						<div class="highScoreLink"><a href="highscores.html">
 								HighScores
 							</a></div>
