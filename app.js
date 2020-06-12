@@ -228,4 +228,7 @@ function gameover() {
     swal({title: "GAME OVER!", text: "YOU ARE LOST IN THE DARK", button: false, timer:3000})
         lose = true;
     }
-
+/**Mute fucntion 
+ document.getElementById("anyId").muted = !document.getElementById(
+      "anyID"
+    ).muted;*/

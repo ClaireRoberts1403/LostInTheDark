@@ -70,9 +70,11 @@ In addition, you should mention in this section how your project looks and works
 
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
+If this section grows too long, you may want to split it off into a separate file and link to it from here
+- Intial project will fit onto three screen sizes using margins as the buffer, and all sizes must be one page with no scrolling. Focusing first on small screen and large screen before moving onto tablet/medium screens.
+  Issues with the movement of screen sizes disrupting the equal spacing. A more robust method is needed.
 - First test onto other browsers via github host showed no audio or images. Easy fix but didnt show in previews in gitpod.
+- Fix for no images/audio failed.
 
 ## Deployment
 
