@@ -41,7 +41,7 @@ span {
 
 /*button stylings*/
 
-.runButton {
+.startGameButton {
   font-size: 20px;
   text-align: center;
   border: none;
@@ -63,7 +63,7 @@ span {
   text-decoration: none;
 }
 
-.startButton {
+.startButtonModal {
   margin-left: 45%;
   font-size: 10%;
   border: none;
@@ -105,7 +105,7 @@ span {
 
 /*arrows*/
 
-#up {
+#upArrow {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -113,7 +113,7 @@ span {
   cursor: pointer;
   
 }
-#left {
+#leftArrow {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -121,7 +121,7 @@ span {
   cursor: pointer;
 }
 
-#right {
+#rightArrow {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
