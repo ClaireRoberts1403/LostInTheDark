@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+html {
+  max-width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+body {
+  font-family: "Creepster", cursive;
+  background-image: url("/assets/images/Lost.jpg");
+  max-width: 100%;
+  color: whitesmoke;
+}
+
+a {
+  color: #17a2b8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #148192;
+}
+.gameSize {
+  margin: 0 20%;
+}
+
+h1 {
+  font-size: 500%;
+  text-align: center;
+  color: rgb(73, 3, 185);
+}
+
+.title {
+    margin-top: 15%;
+    font-size: 600%;
+}
+
+span {
+  font-size: 1.5em;
+}
+
+/*button stylings*/
+
+.startGameButton {
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.beginButton {
+  margin-top: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: 200%;
+  border: none;
+  text-decoration: none;
+}
+
+.startButtonModal {
+  margin-left: 45%;
+  font-size: 100%;
+  border: none;
+  text-decoration: none;
+}
+
+/*modal*/
+
+.storyModal {
+  border: none;
+  background-image: url("../images/Lost.jpg");
+}
+
+.modal-content {
+  background-color: black;
+  border: none;
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
+  word-spacing: 0.2em;
+}
+.close {
+  color: rgb(100, 137, 167);
+  border: none;
+  text-shadow: none;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-footer {
+  border: none;
+}
+/*game container*/
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/*arrows*/
+
+#upArrow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  cursor: pointer;
+  
+}
+#leftArrow{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  cursor: pointer;
+}
+
+#rightArrow {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  cursor: pointer;
+}
+/*game over swal*/
+.swal-modal {
+  background-color: rgba(82, 26, 145, 0.90);
+  border: 3px solid white;
+}
+
+.swal-title {
+  margin: 0px;
+  font-size: 100px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+  margin-bottom: 28px;
+}
+
+.swal-text {
+  font-size: 40px;
+  padding: 17px;
+  margin: 22px;
+  text-align: center;
+}
+
+/*footer links*/
+
+.help a {
+  margin-left: 300px;
+  font-size: 1.5em;
+}
+
+.highScoreLink a {
+  margin-right: 300px;
+  font-size: 1.5em;
+}
+
+.hard {
+    text-align: center;
+}
+
+/* help page*/
+.helpText {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 20px;
+  letter-spacing: 0.05em;
+  word-spacing: 0.2em;
+}
+
+/*HighScore*/
+
+.highScoreInput {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 150%;
+}
+
+.submitButton {
+  margin-left: 300%;
+  font-size: 100%;
+  border: none;
+  text-decoration: none;
+}
+
+.table {
+    color:inherit;
+    text-align: center;
+}
+
+.leagueTable {
+    font-size: 120%;
+}
