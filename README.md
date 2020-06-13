@@ -74,7 +74,7 @@ You should also mention in this section any interesting bugs or problems you dis
   Issues with the movement of screen sizes disrupting the equal spacing. A more robust method is needed.
 - First test onto other browsers via github host showed no audio or images. Easy fix but didnt show in previews in gitpod.
 - Fix for no images/audio failed. Realised mistake now fixed, images and audio now working when deployed.
-- First user test showed more accessbility needed a back or home button. A curser chnange on hover over the arrows to make it clear to click. Clearer start button was called RUN! now called Start Running!
+- First user test showed more accessbility needed a back or home button. A curser chnange on hover over the arrows to make it clear to click. Clearer start button was called RUN! now called Begin!
 - First user test also suggested a mute button for the audio. 
 
 ## Deployment
