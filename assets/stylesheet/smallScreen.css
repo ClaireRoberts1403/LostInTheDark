@@ -66,9 +66,9 @@ span {
 
 .startButtonModal {
   margin-left: 45%;
-  font-size: 10%;
   border: none;
   text-decoration: none;
+  font-size: 1.2em;
 }
 
 /*modal*/
@@ -81,7 +81,7 @@ span {
 .modal-content {
   background-color: black;
   border: none;
-  font-size: 1em;
+  font-size: 1.2em;
   letter-spacing: 0.05em;
   word-spacing: 0.2em;
 }
