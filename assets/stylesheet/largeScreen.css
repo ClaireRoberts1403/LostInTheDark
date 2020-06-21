@@ -32,8 +32,8 @@ h1 {
 }
 
 .title {
-    margin-top: 15%;
-    font-size: 600%;
+  margin-top: 15%;
+  font-size: 600%;
 }
 
 span {
@@ -112,9 +112,8 @@ span {
   margin-right: auto;
   width: 150px;
   cursor: pointer;
-  
 }
-#leftArrow{
+#leftArrow {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -131,7 +130,7 @@ span {
 }
 /*game over swal*/
 .swal-modal {
-  background-color: rgba(82, 26, 145, 0.90);
+  background-color: rgba(82, 26, 145, 0.9);
   border: 3px solid white;
 }
 
@@ -151,18 +150,35 @@ span {
 
 /*footer links*/
 
-.help a {
-  margin-left: 300px;
-  font-size: 1.5em;
+.links {
+    text-align: center;
+    margin-bottom: 10px;
+
 }
 
-.highScoreLink a {
-  margin-right: 300px;
+.homeIcon {
+  display: inline-block;
   font-size: 1.5em;
+ 
+}
+
+.help  {
+  display: inline-block;
+  font-size: 1.5em;
+  
+}
+
+.highScoreLink  {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-left: 200px;
+  margin-right: 200px;
+  
 }
 
 .hard {
-    text-align: center;
+  display: inline-block;
+ 
 }
 
 /* help page*/
@@ -177,9 +193,9 @@ span {
 /*HighScore*/
 
 .highScoreInput {
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 150%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 150%;
 }
 
 .submitButton {
@@ -190,10 +206,10 @@ span {
 }
 
 .table {
-    color:inherit;
-    text-align: center;
+  color: inherit;
+  text-align: center;
 }
 
 .leagueTable {
-    font-size: 120%;
+  font-size: 120%;
 }

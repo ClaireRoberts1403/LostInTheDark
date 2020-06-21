@@ -11,10 +11,11 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://kit.fontawesome.com/90ed803b97.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" media="screen and (min-width: 600px)" href="./assets/stylesheet/largeScreen.css">
-<link rel="stylesheet" media="screen and (max-width: 600px)" href="./assets/stylesheet/smallScreen.css">
-	<link />
+	<link rel="stylesheet" media="screen and (max-width: 600px)" href="./assets/stylesheet/smallScreen.css">
+
 
 	<title>Lost in the Dark</title>
 	<audio id="clip1">
@@ -72,14 +73,17 @@
 						</div>
 					</div>
 					<!--Link to help information in footer-->
-					<footer class="navbar fixed-bottom">
+					<div class="fixed-bottom">
 						<audio src="./assets/audio/darkOmen.mp3" autoplay loop></audio>
-						<div class="help"><a href="help.html">Help</a></div>
-                        <div class="hard"><a href="hardgame.html">Too easy? <br>Really Lost in the Dark - The hard level</a></div>
-						<div class="highScoreLink"><a href="highscores.html">
-								HighScores
-							</a></div>
-					</footer>
+						<div class="links">
+							<div><a class="homeIcon" href="index.html"><i class="fas fa-home"></i></a><a
+									class="highScoreLink" href="highscores.html">
+									HighScores
+								</a><a class="help" href="help.html">Help</a></div>
+							<div class="hard"><a href="hardgame.html">Get Really Lost in the Dark - The harder game</a>
+							</div>
+						</div>
+					</div>
 				</div>
 </body>
 <script src="/assets/scripts/app.js" charset="utf-8"></script>
