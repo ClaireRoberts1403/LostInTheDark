@@ -104,20 +104,39 @@ span {
   padding-right: 5%;
 }
 
+/*game header highscore score and level*/
+
+.highScore {
+  display: inline;
+  margin-left: 10px;
+}
+
+.scoreCount {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.level {
+  display: inline;
+  margin-right: 10px;
+}
+
 /*arrows*/
 
 #upArrow {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 8em;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 #leftArrow {
   display: inline-block;
-  margin-left: auto;
+  margin-left: -1em;
   margin-right: auto;
-  width: 100%;
+  width: 8em;
   cursor: pointer;
 }
 
@@ -125,7 +144,7 @@ span {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 8em;
   cursor: pointer;
 }
 
@@ -135,9 +154,15 @@ span {
 
 #leftRight {
   flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+.col-sm { 
+    padding: 0;
 }
 
 /*game over swal*/
+
 .swal-modal {
   background-color: rgba(82, 26, 145, 0.9);
   border: 3px solid white;
@@ -158,36 +183,32 @@ span {
 }
 
 /*footer links*/
-.links {
-    text-align: center;
-    margin-bottom: 20px;
 
+.links {
+  text-align: center;
 }
 
 .homeIcon {
   display: inline-block;
   font-size: 1.5em;
- 
 }
 
-.help  {
+.help {
   display: inline-block;
   font-size: 1.5em;
-  
 }
 
-.highScoreLink  {
+.highScoreLink {
   display: inline-block;
   font-size: 1.5em;
   margin-left: 20%;
   margin-right: 20%;
-  
 }
 
 .hard {
   display: inline-block;
   margin-top: 10px;
- 
+  margin-bottom: 10px;
 }
 
 /* help page*/
@@ -209,6 +230,7 @@ span {
 }
 
 .submitButton {
+  margin-left: 300%;
   font-size: 100%;
   border: none;
   text-decoration: none;

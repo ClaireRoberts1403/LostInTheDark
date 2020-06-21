@@ -43,7 +43,7 @@ span {
 /*button stylings*/
 
 .startGameButton {
-  font-size: 20px;
+  font-size: 2em;
   text-align: center;
   border: none;
   text-decoration: none;
@@ -51,6 +51,8 @@ span {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  position: relative;
+  top: 100px;
 }
 
 .beginButton {
@@ -104,30 +106,71 @@ span {
   padding-right: 5%;
 }
 
+/*game header highscore score and level*/
+
+.highScore {
+  display: inline;
+  margin-left: 10px;
+}
+
+.scoreCount {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.level {
+  display: inline;
+  margin-right: 10px;
+}
+
 /*arrows*/
 
 #upArrow {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 150px;
+  width: 8em;
   cursor: pointer;
+  margin-bottom: 5px
 }
+
 #leftArrow {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 150px;
+  width: 8em;
   cursor: pointer;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  
 }
 
 #rightArrow {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 150px;
+  width: 8em;
   cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }
+
+#leftRight {
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+.col-sm { 
+    padding: 0;
+}
+
+.spare {
+    display: none;
+}
+
 /*game over swal*/
 .swal-modal {
   background-color: rgba(82, 26, 145, 0.9);
@@ -151,33 +194,35 @@ span {
 /*footer links*/
 
 .links {
+    margin-top: 10px;
     text-align: center;
-    margin-bottom: 10px;
-
 }
 
 .homeIcon {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.7em;
  
 }
 
 .help  {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.7em;
   
 }
 
 .highScoreLink  {
   display: inline-block;
-  font-size: 1.5em;
-  margin-left: 200px;
-  margin-right: 200px;
+  font-size: 1.7em;
+  margin-left: 20%;
+  margin-right: 20%;
   
 }
 
 .hard {
   display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
  
 }
 
