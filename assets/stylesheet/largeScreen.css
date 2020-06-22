@@ -50,9 +50,7 @@ span {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  position: relative;
-  top: 100px;
+  width: 30%;  
 }
 
 .beginButton {
@@ -141,10 +139,6 @@ span {
   margin-right: auto;
   width: 8em;
   cursor: pointer;
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  
 }
 
 #rightArrow {
@@ -153,14 +147,10 @@ span {
   margin-right: auto;
   width: 8em;
   cursor: pointer;
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
+ }
 
 #leftRight {
   flex-wrap: nowrap;
-  margin-bottom: 20px;
 }
 
 .col-sm { 

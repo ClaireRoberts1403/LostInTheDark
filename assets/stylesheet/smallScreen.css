@@ -50,6 +50,7 @@ span {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
   width: 50%;
 }
 
@@ -134,7 +135,7 @@ span {
 }
 #leftArrow {
   display: inline-block;
-  margin-left: -1em;
+  margin-left: auto;
   margin-right: auto;
   width: 8em;
   cursor: pointer;
