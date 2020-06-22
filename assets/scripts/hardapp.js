@@ -11,6 +11,8 @@ let noise = true;/**sounds made when flashing and being pressed*/
 let win;/**if player reaches level 30*/
 let displayHighScore; /**display highscore*/
 let lose;/**if player presses an incorrect arrow*/
+let savename;/** to save the players name to highscore board */
+let savescore;/** to save the players highscore */
 
 const turnCounter = document.querySelector("#level");
 const upArrow = document.querySelector("#upArrow");/**up arrow*/
@@ -272,8 +274,8 @@ localStorage.setItem('saveHighScore', savescore);
 function winGame() {
   flashColor();
   turnCounter.innerHTML = "WIN!";
-
-  win = true;
+  swal({title: "YOU WIN!", text: "YOU ARE NO LONGER REALLY LOST IN THE DARK", button: false, timer:3000})
+        win = true;
 }
 
 /**gameover function*/
@@ -281,7 +283,7 @@ function winGame() {
 
 function gameover() {
     turnCounter.innerHTML = "!";
-    swal({title: "GAME OVER!", text: "YOU ARE LOST IN THE DARK", button: false, timer:3000})
+    swal({title: "GAME OVER!", text: "YOU ARE REALLY LOST IN THE DARK", button: false, timer:3000})
         lose = true;
     }
 

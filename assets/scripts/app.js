@@ -36,6 +36,7 @@ function play() {
   intervalId = 0;
   level = 1;
   score = 0;
+
   /**Highscore saved on local storage*/
   if (score > scoreHigh) {
                 scoreHigh = score;
@@ -46,7 +47,7 @@ function play() {
   currentScore.innerHTML = 0;
   currentHighScore.innerHTML = scoreHigh;
   correct = true;
-  for (var i = 0; i < 20; i++) {
+  for (var i = 0; i < 5; i++) {
     orderGeneratedSequence.push(Math.floor(Math.random() * 3) + 1);
   }
   compTurn = true;
@@ -158,7 +159,7 @@ function check() {
   if (playerOrder[playerOrder.length - 1] !== orderGeneratedSequence[playerOrder.length - 1])
     correct = false;
 
-  if (playerOrder.length == 30 && correct) {
+  if (playerOrder.length == 5 && correct) {
     winGame();
   }
 
@@ -218,9 +219,9 @@ localStorage.setItem('saveHighScore', savescore);
 function winGame() {
   flashColor();
   turnCounter.innerHTML = "WIN!";
-
-  win = true;
-}
+  swal({title: "YOU WIN!", text: "YOU ARE NO LONGER LOST IN THE DARK", button: false, timer:3000})
+        win = true;
+  }
 
 /**gameover function*/
 
