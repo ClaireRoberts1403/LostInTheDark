@@ -8,7 +8,7 @@ let correct; /**if sequence is correct*/
 let compTurn;/**the computers turn*/
 let intervalId;/**time in between truns*/
 let noise = true;/**sounds made when flashing and being pressed*/
-let win;/**if player reaches level 30*/
+let win;/**if player reaches level 20*/
 let displayHighScore; /**display highscore*/
 let lose;/**if player presses an incorrect arrow*/
 let savename;/** to save the players name to highscore board */
@@ -204,14 +204,17 @@ function check() {
             }
 
 
-  /**Saving high score to highscore leader board */          
+  /**Saving high score to highscore leader board         
 let saveHighScore = "#saveHighScore";
 localStorage.getElementById = "displayHighScore";
 localStorage.getElementById = "name";
 localStorage.setItem('name', savename);
-localStorage.setItem('saveHighScore', savescore);
+localStorage.setItem('saveHighScore', savescore);*/
 
 
+/**localStorage.getElementById = "name";
+localStorage.setItem('name', savename);
+document.getElementById("getHighScore").innerHTML = scoreHigh;*/
 
 
 
@@ -231,7 +234,12 @@ function gameover() {
     swal({title: "GAME OVER!", text: "YOU ARE LOST IN THE DARK", button: false, timer:3000})
         lose = true;
     }
-/**Mute fucntion 
- document.getElementById("anyId").muted = !document.getElementById(
-      "anyID"
-    ).muted;*/
+
+/**Mute function 
+ document.getElementById("mute").muted = !document.getElementById(
+      "mute"
+    ).muted;
+
+    ("mute").addEventListener("click", () => {
+  mute();
+});*/
