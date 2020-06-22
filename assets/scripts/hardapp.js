@@ -214,7 +214,7 @@ function check() {
   if (playerOrder[playerOrder.length - 1] !== orderGeneratedSequence[playerOrder.length - 1])
     correct = false;
 
-  if (playerOrder.length == 30 && correct) {
+  if (playerOrder.length == 5 && correct) {
     winGame();
   }
 

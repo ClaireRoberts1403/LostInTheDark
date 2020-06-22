@@ -47,7 +47,7 @@ function play() {
   currentScore.innerHTML = 0;
   currentHighScore.innerHTML = scoreHigh;
   correct = true;
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 20; i++) {
     orderGeneratedSequence.push(Math.floor(Math.random() * 3) + 1);
   }
   compTurn = true;
