@@ -149,6 +149,24 @@ span {
   cursor: pointer;
  }
 
+ #upleftArrow {
+  display: inline-block;
+  margin-left: 20%;
+  margin-right: auto;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+
+#uprightArrow {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 20%;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+
 #leftRight {
   flex-wrap: nowrap;
 }
@@ -247,4 +265,8 @@ span {
 
 .leagueTable {
   font-size: 120%;
+}
+
+.highScoreBoard {
+    margin: 0 20%;
 }

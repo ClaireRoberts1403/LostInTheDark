@@ -20,19 +20,19 @@
 </head>
 
 <body>
-	<div class="gameSize">
-		<h1>Harder HighScores</h1>
+	<div class="highScoreBoard">
+		<h1 class="highScoreH1">Really HighScores</h1>
 		<div class="form-inline highScoreInput">
 			<div class="form-group mx-sm-3 mb-2">
 				<div>
-					<p value = "name" id="name"><input type="text" placeholder ="Enter Name Here"/></p>
+					<p value="name" id="name"><input type="text" placeholder ="Enter Name Here"/></p>
 				</div>
-                
+
 				<div class="form-group mx-sm-3 mb-2">
-					<p>HighScore : <p id="getHighScore"></p>
+					<p id="displayHighScore">HighScore : <p id="getHighScore"></p>
 					</p>
 				</div>
-                
+
 				<div class="form-group mx-sm mb-2">
 					<button
                             type="submit"
@@ -66,12 +66,12 @@
 					<td></td>
 					<td></td>
 				</tr>
-                <tr>
+				<tr>
 					<th scope="row">4</th>
 					<td></td>
 					<td></td>
 				</tr>
-                <tr>
+				<tr>
 					<th scope="row">5</th>
 					<td></td>
 					<td></td>
@@ -81,15 +81,14 @@
 		</table>
 
 
-	<!--Link to help information in footer-->
-	<div class="fixed-bottom">
+		<!--Link to help information in footer-->
+		<div>
 			<audio src="./assets/audio/darkAwakening.mp3" autoplay loop></audio>
 			<div class="links">
 				<div><a class="homeIcon" href="index.html"><i class="fas fa-home"></i></a><a class="highScoreLink"
 						href="highscores.html">
 						HighScores
 					</a><a class="help" href="help.html">Help</a></div>
-				
 			</div>
 		</div>
 	</div>

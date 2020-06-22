@@ -108,28 +108,31 @@ span {
 /*game header highscore score and level*/
 
 .highScore {
-  display: inline;
-  margin-left: 10px;
+  display: inline-block;
+  margin-left: 8px;
+  white-space: nowrap;
 }
 
 .scoreCount {
-  display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 8px;
+  white-space: nowrap;
 }
 
 .level {
-  display: inline;
-  margin-right: 10px;
+  display: inline-block;
+  margin-right: 8px;
+  white-space: nowrap;
 }
 
 /*arrows*/
 
 #upArrow {
-  display: block;
+  display: blocks;
   margin-left: auto;
   margin-right: auto;
-  width: 8em;
+  width: 6em;
   cursor: pointer;
   margin-bottom: 5px;
 }
@@ -137,7 +140,7 @@ span {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 8em;
+  width: 6em;
   cursor: pointer;
 }
 
@@ -145,7 +148,25 @@ span {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 8em;
+  width: 6em;
+  cursor: pointer;
+}
+
+#upleftArrow {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+#uprightArrow {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  height: 70px;
   cursor: pointer;
 }
 
@@ -162,6 +183,9 @@ span {
     padding: 0;
 }
 
+.upperArrows {
+    display: inline-flex;
+}
 /*game over swal*/
 
 .swal-modal {
@@ -191,17 +215,17 @@ span {
 
 .homeIcon {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .help {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .highScoreLink {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1em;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -224,14 +248,22 @@ span {
 
 /*HighScore*/
 
+.highScoreH1 {
+    margin-top: 5%;
+}
+
 .highScoreInput {
   display: inline-block;
   margin-top: 20px;
   font-size: 100%;
 }
 
+#displayHighScore {
+    text-align: left;
+}
+
 .submitButton {
-  margin-left: 300%;
+  display: inline-block;
   font-size: 100%;
   border: none;
   text-decoration: none;
@@ -244,4 +276,9 @@ span {
 
 .leagueTable {
   font-size: 120%;
+}
+
+.highScoreBoard {
+    margin: 0 2%;
+    text-align: center;
 }
