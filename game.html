@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
         <link rel="stylesheet" media="screen and (min-width: 750px)" href="./assets/stylesheet/largeScreen.css" />
         <link rel="stylesheet" media="screen and (max-width: 750px)" href="./assets/stylesheet/smallScreen.css" />
-        <link rel="icon" href="./assets/images/favicon.png">
+        <link rel="icon" href="./assets/images/favicon.png" />
         <title>Lost in the Dark</title>
         <audio id="clip1">
             <source src="./assets/audio/forward.wav" />
@@ -26,19 +26,13 @@
         <div class="gameSize">
             <header>
                 <!--header showing current highest score, current score and level number-->
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <span class="highScore">HighScore : <span id="highScore"></span></span>
-                        </div>
-                        <div class="col">
-                            <span class="scoreCount">Score : <span id="scoreCount"></span></span>
-                        </div>
-                        <div class="col">
-                            <span class="level">Level : <span id="level"></span></span>
-                        </div>
-                    </div>
-                </div>
+                <nav class="navbar">
+                    <span class="highScore">HighScore : <span id="highScore"></span></span>
+
+                    <span class="scoreCount">Score : <span id="scoreCount"></span></span>
+
+                    <span class="level">Level : <span id="level"></span></span>
+                </nav>
                 <h1>Lost in the Dark</h1>
             </header>
             <!--Game made of containers-->
