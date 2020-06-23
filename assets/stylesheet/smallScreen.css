@@ -130,7 +130,7 @@ span {
 /*arrows*/
 
 #upArrow {
-    display: blocks;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 6em;
