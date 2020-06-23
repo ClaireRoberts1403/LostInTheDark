@@ -23,9 +23,14 @@ const currentScore = document.querySelector("#scoreCount");
 const currentHighScore = document.querySelector("#highScore");
 
 
-startButtonModal.addEventListener("click", () => {
-  play();
-});
+beginButton();
+
+function beginButton() {
+    startButtonModal.addEventListener("click", () => {
+        play();
+    });
+}
+
 /**game play at its start*/
 function play() {
   win = false;
