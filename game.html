@@ -1,93 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="Description" content="Lost in the Dark. An atmospheric memory game" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://kit.fontawesome.com/90ed803b97.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="./assets/stylesheet/largeScreen.css" />
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="./assets/stylesheet/smallScreen.css" />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Lost in the Dark. An atmospheric memory game">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-	</script>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<script src="https://kit.fontawesome.com/90ed803b97.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" media="screen and (min-width: 600px)" href="./assets/stylesheet/largeScreen.css">
-	<link rel="stylesheet" media="screen and (max-width: 600px)" href="./assets/stylesheet/smallScreen.css">
+        <title>Lost in the Dark</title>
+        <audio id="clip1">
+            <source src="./assets/audio/forward.wav" />
+        </audio>
+        <audio id="clip2">
+            <source src="./assets/audio/left.wav" />
+        </audio>
+        <audio id="clip3">
+            <source src="./assets/audio/right.wav" />
+        </audio>
+    </head>
 
-
-	<title>Lost in the Dark</title>
-	<audio id="clip1">
-		<source src="./assets/audio/forward.wav" />
-	</audio>
-	<audio id="clip2">
-		<source src="./assets/audio/left.wav" />
-	</audio>
-	<audio id="clip3">
-		<source src="./assets/audio/right.wav" />
-	</audio>
-</head>
-
-<body>
-	<div class="gameSize">
-		<header>
-			<!--header showing current highest score, current score and level number-->
-			<div class="container">
-				<div class="row">
-					<div class="col"><span class="highScore">HighScore : <span id="highScore"></span></span></div>
-					<div class="col"><span class="scoreCount">Score : <span id="scoreCount"></span></span></div>
-					<div class="col"><span class="level">Level : <span id="level"></span></span></div>
-				</div>
-			</div>
-			<h1>Lost in the Dark</h1>
-		</header>
-		<!--Game made of containers-->
-		<div class="container-fluid">
-			<div class="row">
-
-				<img src="./assets/images/upArrow.png" id="upArrow" alt="UP" />
-            </div>
-				<div class="container-fluid">
-					<div class="row" id="leftRight">
-
-						<img src="./assets/images/leftArrow.png" id="leftArrow" alt="LEFT" />
-
-						<img src="./assets/images/rightArrow.png" id="rightArrow" alt="RIGHT" />
+    <body>
+        <div class="gameSize">
+            <header>
+                <!--header showing current highest score, current score and level number-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <span class="highScore">HighScore : <span id="highScore"></span></span>
+                        </div>
+                        <div class="col">
+                            <span class="scoreCount">Score : <span id="scoreCount"></span></span>
+                        </div>
+                        <div class="col">
+                            <span class="level">Level : <span id="level"></span></span>
+                        </div>
+                    </div>
                 </div>
+                <h1>Lost in the Dark</h1>
+            </header>
+            <!--Game made of containers-->
+            <div class="container-fluid">
+                <div class="row">
+                    <img src="./assets/images/upArrow.png" id="upArrow" alt="UP" />
+                </div>
+                <div class="container-fluid">
+                    <div class="row" id="leftRight">
+                        <img src="./assets/images/leftArrow.png" id="leftArrow" alt="LEFT" />
 
-					</div>
-				</div>
-				<div class="container-fluid">
-					<button type="button" class="btn bg-info text-dark startGameButton" id="startGame">Begin</button>
-				</div>
-
-
-			</div>
-			<!--Link to help information in footer-->
-			<div class="fixed-bottom">
-				<audio src="./assets/audio/darkOmen.mp3" autoplay loop></audio>
-				<div class="links">
-					<div><a class="homeIcon" href="index.html" aria-label="Home Button"><i class="fas fa-home"></i></a><a class="highScoreLink"
-							href="highscores.html">
-							HighScores
-						</a><a class="help" href="help.html">Help</a></div>
-					<div class="hard"><a href="hardgame.html">Get Really Lost in the Dark - The harder game</a>
-					</div>
-				</div>
-			</div>
-
-</body>
-<script src="./assets/scripts/app.js" charset="utf-8"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-	integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-</script>
-
+                        <img src="./assets/images/rightArrow.png" id="rightArrow" alt="RIGHT" />
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <button type="button" class="btn bg-info text-dark startGameButton" id="startGame">Begin</button>
+            </div>
+        </div>
+        <!--Link to help information in footer-->
+        <div class="fixed-bottom">
+            <audio src="./assets/audio/darkOmen.mp3" autoplay loop></audio>
+            <div class="links">
+                <div>
+                    <a class="homeIcon" href="index.html" aria-label="Home Button"><i class="fas fa-home"></i></a>
+                    <a class="highScoreLink" href="highscores.html">
+                        HighScores
+                    </a>
+                    <a class="help" href="help.html">Help</a>
+                </div>
+                <div class="hard"><a href="hardgame.html">Get Really Lost in the Dark - The harder game</a></div>
+            </div>
+        </div>
+    </body>
+    <script src="./assets/scripts/app.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </html>

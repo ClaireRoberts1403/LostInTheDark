@@ -1,186 +1,186 @@
 @import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
 
 html {
-  max-width: 100%;
-  overflow: hidden;
-  height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+    height: 100vh;
 }
 
 body {
-  font-family: "Creepster", cursive;
-  background-image: url("../images/Lost.jpg");
-  background-color: grey;
-  max-width: 100%;
-  color: whitesmoke;
+    font-family: "Creepster", cursive;
+    background-image: url("../images/Lost.jpg");
+    background-color: grey;
+    max-width: 100%;
+    color: whitesmoke;
 }
 
 a {
-  color: #17a2b8;
-  text-decoration: none;
+    color: #17a2b8;
+    text-decoration: none;
 }
 a:hover {
-  text-decoration: none;
-  color: #148192;
+    text-decoration: none;
+    color: #148192;
 }
 .gameSize {
-  margin: 0 10%;
-  text-align: center;
+    margin: 0 10%;
+    text-align: center;
 }
 
 h1 {
-  text-align: center;
-  color: rgb(73, 3, 185);
+    text-align: center;
+    color: rgb(73, 3, 185);
 }
 
 .title {
-  margin-top: 15%;
-  font-size: 400%;
+    margin-top: 15%;
+    font-size: 400%;
 }
 
 span {
-  font-size: 1em;
+    font-size: 1em;
 }
 
 /*button stylings*/
 
 .startGameButton {
-  font-size: 20px;
-  text-align: center;
-  border: none;
-  text-decoration: none;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  width: 50%;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 50%;
 }
 
 .beginButton {
-  margin-top: 20%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  font-size: 200%;
-  border: none;
-  text-decoration: none;
+    margin-top: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 200%;
+    border: none;
+    text-decoration: none;
 }
 
 .startButtonModal {
-  margin-left: 45%;
-  border: none;
-  text-decoration: none;
-  font-size: 1.2em;
+    margin-left: 45%;
+    border: none;
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
 /*modal*/
 
 .storyModal {
-  border: none;
-  background-image: url("../images/Lost.jpg");
+    border: none;
+    background-image: url("../images/Lost.jpg");
 }
 
 .modal-content {
-  background-color: black;
-  border: none;
-  font-size: 1.2em;
-  letter-spacing: 0.05em;
-  word-spacing: 0.2em;
+    background-color: black;
+    border: none;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.2em;
 }
 .close {
-  color: rgb(100, 137, 167);
-  border: none;
-  text-shadow: none;
+    color: rgb(100, 137, 167);
+    border: none;
+    text-shadow: none;
 }
 
 .modal-header {
-  border: none;
+    border: none;
 }
 
 .modal-footer {
-  border: none;
+    border: none;
 }
 /*game container*/
 .container {
-  padding-left: 5%;
-  padding-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 /*game header highscore score and level*/
 
 .highScore {
-  display: inline-block;
-  margin-left: 8px;
-  white-space: nowrap;
+    display: inline-block;
+    margin-left: 8px;
+    white-space: nowrap;
 }
 
 .scoreCount {
-  display: inline-block;
-  margin-left: 8px;
-  margin-right: 8px;
-  white-space: nowrap;
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+    white-space: nowrap;
 }
 
 .level {
-  display: inline-block;
-  margin-right: 8px;
-  white-space: nowrap;
+    display: inline-block;
+    margin-right: 8px;
+    white-space: nowrap;
 }
 
 /*arrows*/
 
 #upArrow {
-  display: blocks;
-  margin-left: auto;
-  margin-right: auto;
-  width: 6em;
-  cursor: pointer;
-  margin-bottom: 5px;
+    display: blocks;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    cursor: pointer;
+    margin-bottom: 5px;
 }
 #leftArrow {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 6em;
-  cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    cursor: pointer;
 }
 
 #rightArrow {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 6em;
-  cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    cursor: pointer;
 }
 
 #upleftArrow {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70px;
-  height: 70px;
-  cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
 }
 
 #uprightArrow {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70px;
-  height: 70px;
-  cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
 }
 
 .spare {
-  display: none;
+    display: none;
 }
 
 #leftRight {
-  flex-wrap: nowrap;
-  margin-bottom: 20px;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
 }
 
-.col-sm { 
+.col-sm {
     padding: 0;
 }
 
@@ -190,61 +190,61 @@ span {
 /*game over swal*/
 
 .swal-modal {
-  background-color: rgba(82, 26, 145, 0.9);
-  border: 3px solid white;
+    background-color: rgba(82, 26, 145, 0.9);
+    border: 3px solid white;
 }
 
 .swal-title {
-  margin: 0px;
-  font-size: 100px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
-  margin-bottom: 28px;
+    margin: 0px;
+    font-size: 100px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+    margin-bottom: 28px;
 }
 
 .swal-text {
-  font-size: 40px;
-  padding: 17px;
-  margin: 22px;
-  text-align: center;
+    font-size: 40px;
+    padding: 17px;
+    margin: 22px;
+    text-align: center;
 }
 
 /*footer links*/
 
 .links {
-  text-align: center;
+    text-align: center;
 }
 
 .homeIcon {
-  display: inline-block;
-  font-size: 1em;
+    display: inline-block;
+    font-size: 1em;
 }
 
 .help {
-  display: inline-block;
-  font-size: 1em;
+    display: inline-block;
+    font-size: 1em;
 }
 
 .highScoreLink {
-  display: inline-block;
-  font-size: 1em;
-  margin-left: 20%;
-  margin-right: 20%;
+    display: inline-block;
+    font-size: 1em;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .hard {
-  display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* help page*/
 .helpText {
-  text-align: center;
-  font-size: 1.1em;
-  margin-top: 20px;
-  letter-spacing: 0.05em;
-  word-spacing: 0.2em;
-  border: 5px;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 20px;
+    letter-spacing: 0.05em;
+    word-spacing: 0.2em;
+    border: 5px;
 }
 
 /*HighScore*/
@@ -254,9 +254,9 @@ span {
 }
 
 .highScoreInput {
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 100%;
 }
 
 #displayHighStyle {
@@ -264,19 +264,19 @@ span {
 }
 
 .submitButton {
-  display: inline-block;
-  font-size: 100%;
-  border: none;
-  text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    border: none;
+    text-decoration: none;
 }
 
 .table {
-  color: inherit;
-  text-align: center;
+    color: inherit;
+    text-align: center;
 }
 
 .leagueTable {
-  font-size: 120%;
+    font-size: 120%;
 }
 
 .highScoreBoard {

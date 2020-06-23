@@ -1,104 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="Description" content="Lost in the Dark. An atmospheric memory game" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/90ed803b97.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="./assets/stylesheet/largeScreen.css" />
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="./assets/stylesheet/smallScreen.css" />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Lost in the Dark. An atmospheric memory game">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-	</script>
-	<script src="https://kit.fontawesome.com/90ed803b97.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" media="screen and (min-width: 600px)" href="./assets/stylesheet/largeScreen.css">
-	<link rel="stylesheet" media="screen and (max-width: 600px)" href="./assets/stylesheet/smallScreen.css">
+        <title>Lost in the Dark</title>
+    </head>
 
-	<title>Lost in the Dark</title>
-</head>
+    <body>
+        <!--User friendly mute sounds button to be added-->
+        <!--<i class="fas fa-volume-off" id="mute"></i>-->
+        <!--<i class="fas fa-volume-mute"></i>-->
+        <div class="gameSize">
+            <header>
+                <!--Link to highscores page-->
 
-<body>
-	<!--User friendly mute sounds button to be added-->
-	<!--<i class="fas fa-volume-off" id="mute"></i>-->
-	<!--<i class="fas fa-volume-mute"></i>-->
-	<div class="gameSize">
-		<header>
-			<!--Link to highscores page-->
+                <h1 class="title">Lost in the Dark</h1>
+            </header>
+            <!-- Begin button to trigger story modal -->
+            <button type="button" class="btn btn-info text-dark beginButton" data-toggle="modal" data-target="#exampleModal">
+                Enter
+            </button>
 
-			<h1 class="title">Lost in the Dark</h1>
-		</header>
-		<!-- Begin button to trigger story modal -->
-		<button
-        type="button"
-        class="btn btn-info text-dark beginButton"
-        data-toggle="modal"
-        data-target="#exampleModal"
-      >
-        Enter
-      </button>
-
-		<!-- story modal here -->
-		<div class="modal fade storyModal" id="exampleModal" tabindex="-1" role="dialog"
-			aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-					</div>
-					<div class="modal-body">
-						<p>
-							You awake...lying on the cold dirty floor.......Where are
-							you?.....How did you get here?.....You don't remember. You can't
-							remember......Anything.
-						</p>
-						<p>
-							Your heart begins to race. Its so dark. You need to get out.
-						</p>
-						<p>
-							Images flash before your eyes. Directions. You need to follow
-							them. You need to run!
-						</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn bg-dark text-info startButtonModal">
-                <a href="game.html">Continue</a>
-              </button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--Link to help information in footer-->
-		<div class="fixed-bottom">
-			<audio src="./assets/audio/darkAwakening.mp3" autoplay loop>If you are reading this, it is because your
-				browser does not support the audio element.</audio>
-			<div class="links">
-				<div><a class="homeIcon" href="index.html" aria-label="Home Button"><i class="fas fa-home"></i></a><a class="highScoreLink"
-						href="highscores.html">
-						HighScores
-					</a><a class="help" href="help.html">Help</a></div>
-				<div class="hard"><a href="hardgame.html">Get Really Lost in the Dark - The harder game</a></div>
-			</div>
-		</div>
-	</div>
-</body>
-<script src="/assets/scripts/app.js" charset="utf-8"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-	integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-</script>
-
+            <!-- story modal here -->
+            <div class="modal fade storyModal" id="exampleModal" tabindex="-1" role="dialog" aria-label ="story Modal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                You awake...lying on the cold dirty floor.......Where are you?.....How did you get here?.....You don't remember. You can't remember......Anything.
+                            </p>
+                            <p>
+                                Your heart begins to race. Its so dark. You need to get out.
+                            </p>
+                            <p>
+                                Images flash before your eyes. Directions. You need to follow them. You need to run!
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="game.html" class="btn bg-dark text-info startButtonModal">Continue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Link to help information in footer-->
+            <div class="fixed-bottom">
+                <audio src="./assets/audio/darkAwakening.mp3" autoplay loop>If you are reading this, it is because your browser does not support the audio element.</audio>
+                <div class="links">
+                    <div>
+                        <a class="homeIcon" href="index.html" aria-label="Home Button"><i class="fas fa-home"></i></a>
+                        <a class="highScoreLink" href="highscores.html">
+                            HighScores
+                        </a>
+                        <a class="help" href="help.html">Help</a>
+                    </div>
+                    <div class="hard"><a href="hardgame.html">Get Really Lost in the Dark - The harder game</a></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./assets/scripts/app.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </html>

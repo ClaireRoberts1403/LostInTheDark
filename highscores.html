@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="Description" content="Lost in the Dark. An atmospheric memory game" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://kit.fontawesome.com/90ed803b97.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="./assets/stylesheet/largeScreen.css" />
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="./assets/stylesheet/smallScreen.css" />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Lost in the Dark. An atmospheric memory game">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-	</script>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<script src="https://kit.fontawesome.com/90ed803b97.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" media="screen and (min-width: 600px)" href="./assets/stylesheet/largeScreen.css">
-	<link rel="stylesheet" media="screen and (max-width: 600px)" href="./assets/stylesheet/smallScreen.css">
+        <title>Lost in the Dark</title>
+    </head>
 
-	<title>Lost in the Dark</title>
-</head>
-
-<body>
-	<div class="highScoreBoard">
-		<h1 class="highScoreH1">HighScores</h1>
-		<div class="form-inline highScoreInput">
+    <body>
+        <div class="highScoreBoard">
+            <h1 class="highScoreH1">HighScores</h1>
+            <h1 class="highScoreH1">COMING SOON</h1>
+            <!--<div class="form-inline highScoreInput">
 			<div class="form-group mx-sm-3 mb-2">
 				<div>
 					<p value="name" id="name"><input type="text" placeholder ="Enter Name Here"/></p>
@@ -38,11 +35,17 @@
 					<button
                             type="submit"
                             class="btn bg-info text-dark submitButton"
-                            id="saveHighScore"
+                            id="saveHighScore" onclick="saveHighScoreOnClick"
                             >Submit</button>
 				</div>
 			</div>
 		</div>
+
+        <p>
+			<ol id="highscore-list">
+				
+			</ol>
+		</p>
 		<table class="table leagueTable">
 			<thead>
 				<tr>
@@ -79,31 +82,25 @@
 				</tr>
 			</tbody>
 
-		</table>
+		</table>-->
 
-
-		<!--Link to help information in footer-->
-		<div>
-			<audio src="./assets/audio/darkAwakening.mp3" autoplay loop></audio>
-			<div class="links">
-				<div><a class="homeIcon" href="index.html" aria-label="Home Button"><i class="fas fa-home"></i></a><a class="highScoreLink"
-						href="harderHighscores.html">
-						Really HighScores
-					</a><a class="help" href="help.html">Help</a></div>
-			</div>
-		</div>
-	</div>
-
-</body>
-<script src="/assets/scripts/app.js" charset="utf-8"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-	integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-</script>
-
+            <!--Link to help information in footer-->
+            <div>
+                <audio src="./assets/audio/darkAwakening.mp3" autoplay loop></audio>
+                <div class="links">
+                    <div>
+                        <a class="homeIcon" href="index.html" aria-label="Home Button"><i class="fas fa-home"></i></a>
+                        <a class="highScoreLink" href="harderHighscores.html">
+                            Really HighScores
+                        </a>
+                        <a class="help" href="help.html">Help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./assets/scripts/app.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </html>

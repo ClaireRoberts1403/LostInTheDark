@@ -28,17 +28,16 @@ up occurs stating game over. It stays on screen for 3 seconds before the player 
 
 - The help page (help.html). A link at the bottom of both the game and landing page will bring the player to the help page with explains the game.
 
-- The highscore page (highscores.html) Is still being built but will display the top five scores and the players name in local storage.
-
 - The hardgame page (hardgame.html). To be 'really lost in the dark' players have the same game except with five arrows and no differnce between the sounds 
 on the flash of the arrow to make the game more challenging.
 
 Potential future features:
-A video landing page.
+A video landing page to introduce the game.
 To develop a movement game where players move the character in the directions shown.
 
 ### Features Left to Implement
-- highscore board
+- The highscore page (highscores.html) will display the top five scores and the players name in local storage.
+- Mute button to mute audio.
 
 ## Technologies Used
 - HTML5
@@ -54,39 +53,27 @@ To develop a movement game where players move the character in the directions sh
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+Testing was carried out throughout the build, issues can be seen through the timeline of commits. Below is some of the bigger issues.
 
 - Intial project will fit onto three screen sizes using margins as the buffer, and all sizes must be one page with no scrolling. Focusing first on small screen and large screen before moving onto tablet/medium screens.
-  Issues with the movement of screen sizes disrupting the equal spacing. A more robust method is needed.
-- First test onto other browsers via github host showed no audio or images. Easy fix but didnt show in previews in gitpod.
+- Issues with the movement of screen sizes disrupting the equal spacing. A more robust method is needed.
+- First test onto other browsers via github host showed no audio or images. Easy fix but didn't show in previews in gitpod.
 - Fix for no images/audio failed. Realised mistake now fixed, images and audio now working when deployed.
-- First user test showed more accessbility needed a back or home button. A curser chnange on hover over the arrows to make it clear to click. Clearer start button was called RUN! now called Begin!
+- First user test showed more accessbility needed a back or home button. A curser change on hover over the arrows to make it clear to click. Clearer start button was called RUN! now called Begin!
 - First user test also suggested a mute button for the audio. 
+- Lighthouse testing showed some accessability issues such as a label on the home button. Scripts not used on a page where removed for performance.
+- A strange bug has occured with one of the licenses where it won't delete due to its file name, no fix found but it doesn't impact site at all.
+- Full button check complete no issues all buttons work as suppose to.
+- Game play tested by setting win value to five, both versions work win or lose with the pop up deploying.
+- Could not get the mute button to mute audio.
+- Could not get the highscore to be displayed on highscore board. I could find no soloution using Javascript to do this.
+- All code run through a formatter. https://htmlformatter.com/
+- Code ran through doiuse..? Found less than 1% compatability issues with other browsers. http://doiuse.herokuapp.com/
+- Code ran through html mark up validator https://validator.w3.org/. It highlighted a issue with a button being use with a link. This was fix by styling the link as a button.
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
+The game is hosted through github pages.
 
 
 ## Credits
