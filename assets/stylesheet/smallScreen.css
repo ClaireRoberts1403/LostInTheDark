@@ -8,8 +8,7 @@ html {
 
 body {
     font-family: "Creepster", cursive;
-    background-image: url("./assets/images/Lost.jpg");
-    background-color: grey;
+    background-image: url("../images/Lost.jpg");
     max-width: 100%;
     color: whitesmoke;
 }
