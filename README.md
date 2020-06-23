@@ -72,7 +72,7 @@ Testing was carried out throughout the build, issues can be seen through the tim
 - Code ran through html mark up validator https://validator.w3.org/. It highlighted a issue with a button being use with a link. This was fix by styling the link as a button.
 - Testing through mobiReady https://ready.mobi/ highlight a lack of favicon and issues with CSS not rendering the background image. Issue due to adding a background color if image failed.
 - Responsive testing on http://responsivetesttool.com/ highlighted that the game size may actually be a little small at the mobile size. Also highlight an issue with the scores and level text moving and jumping.
- 
+- From the results of responsive testing no stylesheet for tablet size devices is needed.
 
 
 ## Deployment

@@ -33,7 +33,7 @@ h1 {
 
 .title {
     margin-top: 15%;
-    font-size: 400%;
+    font-size: 500%;
 }
 
 span {
@@ -105,6 +105,10 @@ span {
     padding-right: 5%;
 }
 
+.gameTitle {
+    font-size: 400%;
+}
+
 /*game header highscore score and level*/
 
 .highScore {
@@ -132,15 +136,15 @@ span {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 6em;
+    width: 7em;
     cursor: pointer;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 #leftArrow {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    width: 6em;
+    width: 7em;
     cursor: pointer;
 }
 
@@ -148,7 +152,7 @@ span {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    width: 6em;
+    width: 7em;
     cursor: pointer;
 }
 
