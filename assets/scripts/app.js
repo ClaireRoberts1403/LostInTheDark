@@ -60,7 +60,7 @@ function play() {
 
     intervalId = setInterval(gameTurn, 500);
 }
-/**game turn sequence of event and outputs*/
+/**game turn sequence of event and outputs - code insprired by that of the Simon tutorial link found in README*/
 function gameTurn() {
     on = false;
 
@@ -84,7 +84,7 @@ function gameTurn() {
 /**function forup arrow*/
 function upArrowF() {
     if (noise) {
-        let audio = document.getElementById("clip1");
+        let audio = document.getElementById("forwardAudio");
         audio.play();
     }
     noise = true;
@@ -93,7 +93,7 @@ function upArrowF() {
 /**left arrow*/
 function leftArrowF() {
     if (noise) {
-        let audio = document.getElementById("clip2");
+        let audio = document.getElementById("leftAudio");
         audio.play();
     }
     noise = true;
@@ -102,7 +102,7 @@ function leftArrowF() {
 /**right arrow*/
 function rightArrowF() {
     if (noise) {
-        let audio = document.getElementById("clip3");
+        let audio = document.getElementById("rightAudio");
         audio.play();
     }
     noise = true;
@@ -208,7 +208,7 @@ if (scoreSave == null) {
     scoreHigh = parseInt(scoreSave);
 }
 
-/**Saving high score to highscore leader board
+/**Saving high score to highscore leader board still to be implemented sucessfully
 
 const saveHighScore = document.querySelector("#saveHighScore");
 localStorage.getElementById = "displayHighScore";
@@ -242,7 +242,7 @@ function gameover() {
     lose = true;
 }
 
-/**Mute function 
+/**Mute function still to be implemented sucessfully
  document.getElementById("mute").muted = !document.getElementById(
       "mute"
     ).muted;
