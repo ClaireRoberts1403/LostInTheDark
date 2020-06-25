@@ -14,8 +14,8 @@ A harder level "Really Lost in the Dark", was added to make the play more challe
 
 ## Wireframes
 
-![Image of wire frames](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assests/images/wireframe1.jpg)
-![Image of wire frames](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assests/images/wireframe2.jpg)
+![Image of wire frames](https://github.com/ClaireRoberts1403/LostInTheDark/tree/master/assests/images/wireframe1.jpg)
+![Image of wire frames](https://github.com/ClaireRoberts1403/LostInTheDark/tree/master/assests/images/wireframe2.jpg)
 Orginal idea planning of the game.
 
 
@@ -23,19 +23,19 @@ Orginal idea planning of the game.
  
 ### Existing Features
 
-![Image of landing page](https://github.com/ClaireRoberts1403/LostInTheDark/master/assests/images/landingSS.png)
+![Image of landing page](https://github.com/ClaireRoberts1403/LostInTheDark/tree/master/assests/images/landingSS.png)
 - The landing page (index.html). Introduces the player to the game with the game title. A dark forest background greets the player.
 The player then has options to begin, help, or highscores. If the player selects begin a modal pops up telling the back story. The player 
 can either exit or click on start game. This links the the game page (game.html)
-![Image of story modal](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assests/images/storySS.png)
+![Image of story modal](https://github.com/ClaireRoberts1403/LostInTheDark/tree/master/assests/images/storySS.png)
 
-![Image of game page](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assests/images/lostSS.png)
+![Image of game page](https://github.com/ClaireRoberts1403/LostInTheDark/tree/master/assests/images/lostSS.png)
 - The game page (game.html). The music shifts to a movement/running piece. The player sees the three arrows and a begin button. Once clicked
 the arrows will flash, producing a unique sound for each arrow, in order that the player repeats back by clicking on the arrow. Each level completed succesfully earns ten point for the 
 score. And a highscore is save in local storage for the players time on the page. If the player presses an incorrect arrow. Gameover. A sweetalert pop 
 up occurs stating game over. It stays on screen for 3 seconds before the player is returned to the game screen.
 
-![Image of help page](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assests/images/helpSS.png)
+![Image of help page](https://github.com/ClaireRoberts1403/LostInTheDark/tree/master/assests/images/helpSS.png)
 - The help page (help.html). A link at the bottom of both the game and landing page will bring the player to the help page with explains the game.
 
 ![Image of hardgame page](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assests/images/ReallyLostSS.png)
