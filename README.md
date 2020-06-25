@@ -23,7 +23,7 @@ Orginal idea planning of the game.
  
 ### Existing Features
 
-![Image of landing page](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assests/images/landingSS.png)
+![Image of landing page](https://github.com/ClaireRoberts1403/LostInTheDark/master/assests/images/landingSS.png)
 - The landing page (index.html). Introduces the player to the game with the game title. A dark forest background greets the player.
 The player then has options to begin, help, or highscores. If the player selects begin a modal pops up telling the back story. The player 
 can either exit or click on start game. This links the the game page (game.html)
