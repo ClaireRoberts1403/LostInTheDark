@@ -39,7 +39,7 @@ up occurs stating game over. It stays on screen for 3 seconds before the player 
 - The help page (help.html). A link at the bottom of both the game and landing page will bring the player to the help page with explains the game.
 
 ![Image of hardgame page](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assets/images/ReallyLostSS.png)
-- The hardgame page (hardgame.html). To be 'really lost in the dark' players have the same game except with five arrows and no differnce between the sounds 
+- The hardgame page (hardgame.html). To be 'really lost in the dark' players have the same game except with five arrows and no difference between the sounds 
 on the flash of the arrow to make the game more challenging.
 
 Potential future features:
@@ -55,11 +55,10 @@ To develop a movement game where players move the character in the directions sh
 - CSS3
 - JavaScript
 - Bootstrap
-- A Simon! game following the online tutorial from freeCodeCamp.freeCodeCamp https://youtu.be/n_ec3eowFLQ
-- https://sweetalert.js.org/. Used for the alert system.
-- https://www.w3schools.com/howto - for some styling.
-- http://www.2createawebsite.com/enhance/adding-music.html - how to embed the music
-
+- [Youtube tutorial for simon game](https://youtu.be/n_ec3eowFLQA) Simon! game following the online tutorial from freeCodeCamp.freeCodeCamp 
+- [sweetalert Link](https://sweetalert.js.org/) - Used for the alert system.
+- [w3school Link](https://www.w3schools.com/howto) - for some styling.
+- [2createawebsite Link](http://www.2createawebsite.com/enhance/adding-music.html) - how to embed the music
 
 
 ## Testing
@@ -78,18 +77,18 @@ Testing was carried out throughout the build, issues can be seen through the tim
 - Game play tested by setting win value to five, both versions work win or lose with the pop up deploying.
 - Could not get the mute button to mute audio.
 - Could not get the highscore to be displayed on highscore board. I could find no soloution using Javascript to do this.
-- All code run through a formatter. https://htmlformatter.com/
-- Code ran through doiuse..? Found less than 1% compatability issues with other browsers. http://doiuse.herokuapp.com/
-- Code ran through html mark up validator https://validator.w3.org/. It highlighted a issue with a button being use with a link. This was fix by styling the link as a button.
-- Testing through mobiReady https://ready.mobi/ highlight a lack of favicon and issues with CSS not rendering the background image. Issue due to adding a background color if image failed.
-- Responsive testing on http://responsivetesttool.com/ highlighted that the game size may actually be a little small at the mobile size. Also highlight an issue with the scores and level text moving and jumping.
+- All code run through a formatter. [htmlformatter](https://htmlformatter.com/)
+- Code ran through doiuse..? Found less than 1% compatability issues with other browsers. [Do is use?](http://doiuse.herokuapp.com/)
+- Code ran through html mark up validator [validator](https://validator.w3.org/) It highlighted a issue with a button being use with a link. This was fix by styling the link as a button.
+- Testing through mobiReady [mobiready](https://ready.mobi/) highlight a lack of favicon and issues with CSS not rendering the background image. Issue due to adding a background color if image failed.
+- Responsive testing on [Responsive test tool](http://responsivetesttool.com/) highlighted that the game size may actually be a little small at the mobile size. Also highlight an issue with the scores and level text moving and jumping.
 - From the results of responsive testing no stylesheet for tablet size devices is needed.
-- From more user testing on mobile devices in its current format the game seem best suited to computer play using a mouse to touch the arrows. This is somwthing that could be looked into more in the future.
+- From more user testing on mobile devices in its current format the game seem best suited to computer play using a mouse to touch the arrows. This is something that could be looked into more in the future.
 
 
 ## Deployment
 
-The game is hosted through github pages.
+The game is hosted through github pages. Purely for educational purposes.
 
 
 ## Credits
@@ -105,6 +104,7 @@ A Simon! game following the online tutorial from freeCodeCamp.freeCodeCamp https
 - The background photo used in this site was obtained from pinterest via google image search - used without permission.
 - https://www.stickpng.com/ - for arrow image - then resized and rotated by myself.
 - https://elements.envato.com/ - for sounds and music - licenses are saved in code file licenses.
+
 ### Acknowledgements
 
 From starting this tutorial on JavaScript games I was inspired to do a game for my milestone2 project.
