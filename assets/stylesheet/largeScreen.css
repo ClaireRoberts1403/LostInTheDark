@@ -234,9 +234,14 @@ span {
 .helpText {
     text-align: center;
     font-size: 1.5em;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     letter-spacing: 0.05em;
     word-spacing: 0.2em;
+}
+
+.helpTitle {
+    font-size: 400%;
 }
 
 /*HighScore*/

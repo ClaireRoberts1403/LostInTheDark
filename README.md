@@ -12,22 +12,33 @@ gets harder each level the pass. A score and highscore shows the player their pr
 
 A harder level "Really Lost in the Dark", was added to make the play more challenging.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+## Wireframes
+
+![Image of wire frames](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assests/images/wireframe1.jpg)
+![Image of wire frames](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assests/images/wireframe2.jpg)
+Orginal idea planning of the game.
+
 
 ## Features
  
 ### Existing Features
+
+![Image of landing page](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assests/images/landingSS.png)
 - The landing page (index.html). Introduces the player to the game with the game title. A dark forest background greets the player.
 The player then has options to begin, help, or highscores. If the player selects begin a modal pops up telling the back story. The player 
 can either exit or click on start game. This links the the game page (game.html)
+![Image of story modal](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assests/images/storySS.png)
 
+![Image of game page](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assests/images/lostSS.png)
 - The game page (game.html). The music shifts to a movement/running piece. The player sees the three arrows and a begin button. Once clicked
 the arrows will flash, producing a unique sound for each arrow, in order that the player repeats back by clicking on the arrow. Each level completed succesfully earns ten point for the 
 score. And a highscore is save in local storage for the players time on the page. If the player presses an incorrect arrow. Gameover. A sweetalert pop 
 up occurs stating game over. It stays on screen for 3 seconds before the player is returned to the game screen.
 
+![Image of help page](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assests/images/helpSS.png)
 - The help page (help.html). A link at the bottom of both the game and landing page will bring the player to the help page with explains the game.
 
+![Image of hardgame page](https://github.com/ClaireRoberts1403/LostInTheDark/blob/master/assests/images/ReallyLostSS.png)
 - The hardgame page (hardgame.html). To be 'really lost in the dark' players have the same game except with five arrows and no differnce between the sounds 
 on the flash of the arrow to make the game more challenging.
 
@@ -73,6 +84,7 @@ Testing was carried out throughout the build, issues can be seen through the tim
 - Testing through mobiReady https://ready.mobi/ highlight a lack of favicon and issues with CSS not rendering the background image. Issue due to adding a background color if image failed.
 - Responsive testing on http://responsivetesttool.com/ highlighted that the game size may actually be a little small at the mobile size. Also highlight an issue with the scores and level text moving and jumping.
 - From the results of responsive testing no stylesheet for tablet size devices is needed.
+- From more user testing on mobile devices in its current format the game seem best suited to computer play using a mouse to touch the arrows. This is somwthing that could be looked into more in the future.
 
 
 ## Deployment
