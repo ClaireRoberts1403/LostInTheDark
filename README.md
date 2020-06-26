@@ -77,7 +77,7 @@ Testing was carried out throughout the build, issues can be seen through the tim
 - Game play tested by setting win value to five, both versions work win or lose with the pop up deploying.
 - Could not get the mute button to mute audio.
 - Could not get the highscore to be displayed on highscore board. I could find no soloution using Javascript to do this.
-- All code run through a formatter. I uesed [htmlformatter](https://htmlformatter.com/)
+- All code run through a formatter. I used [htmlformatter](https://htmlformatter.com/)
 - Code ran through browsers compatability tester. I used [Do is use?](http://doiuse.herokuapp.com/) Found less than 1% compatability issues with other browsers. 
 - Code ran through html mark up validator. I used [validator](https://validator.w3.org/) It highlighted a issue with a button being use with a link. This was fix by styling the link as a button.
 - Testing through mobiReady.[Mobiready](https://ready.mobi/) highlight a lack of favicon and issues with CSS not rendering the background image. Issue due to adding a background color if image failed.
