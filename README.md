@@ -77,10 +77,10 @@ Testing was carried out throughout the build, issues can be seen through the tim
 - Game play tested by setting win value to five, both versions work win or lose with the pop up deploying.
 - Could not get the mute button to mute audio.
 - Could not get the highscore to be displayed on highscore board. I could find no soloution using Javascript to do this.
-- All code run through a formatter. [I used htmlformatter](https://htmlformatter.com/)
-- Code ran through browsers compatability tester[I used Do is use?](http://doiuse.herokuapp.com/) Found less than 1% compatability issues with other browsers. 
-- Code ran through html mark up validator. [I used validator](https://validator.w3.org/) It highlighted a issue with a button being use with a link. This was fix by styling the link as a button.
-- Testing through mobiReady. [I used mobiready](https://ready.mobi/) highlight a lack of favicon and issues with CSS not rendering the background image. Issue due to adding a background color if image failed.
+- All code run through a formatter. I uesed [htmlformatter](https://htmlformatter.com/)
+- Code ran through browsers compatability tester. I used [Do is use?](http://doiuse.herokuapp.com/) Found less than 1% compatability issues with other browsers. 
+- Code ran through html mark up validator. I used [validator](https://validator.w3.org/) It highlighted a issue with a button being use with a link. This was fix by styling the link as a button.
+- Testing through mobiReady.[Mobiready](https://ready.mobi/) highlight a lack of favicon and issues with CSS not rendering the background image. Issue due to adding a background color if image failed.
 - Responsive testing. [I used responsive test tool](http://responsivetesttool.com/) highlighted that the game size may actually be a little small at the mobile size. Also highlight an issue with the scores and level text moving and jumping.
 - From the results of responsive testing no stylesheet for tablet size devices is needed.
 - From more user testing on mobile devices in its current format the game seem best suited to computer play using a mouse to touch the arrows. This is something that could be looked into more in the future.
@@ -102,13 +102,13 @@ A Simon! game following the online tutorial from freeCodeCamp.freeCodeCamp https
 
 ### Media
 - The background photo used in this site was obtained from pinterest via google image search - used without permission.
-- [Here is where I got the arrow images](https://www.stickpng.com/) - then resized and rotated by myself.
-- [Here is where I sourced the sounds and music](https://elements.envato.com/) - licenses are saved in code file licenses.
+- The arrow images where sourced from [stickpng](https://www.stickpng.com/) - then resized and rotated by myself.
+- The sounds and audio was source from [elements.envato](https://elements.envato.com/) - licenses are saved in code file licenses.
 
 ### Acknowledgements
 
 From starting a tutorial on JavaScript games of youtube, I was inspired to do a game for my milestone2 project.
-[This was that tutorial](https://www.youtube.com/watch?v=lhNdUVh3qCc)
+[Link to youTube tutorial](https://www.youtube.com/watch?v=lhNdUVh3qCc)
 
 I struggled with this project after taking some time out due to my current job taking a lot for hours out my week due to the coronavirus crisis.
 However, I enjoyed the challenge of trying to figure it all out and feel like I have learnt more in the process.
