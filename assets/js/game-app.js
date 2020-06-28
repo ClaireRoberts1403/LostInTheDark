@@ -80,7 +80,7 @@ function gameTurn() {
         }, 100);
     }
 }
-//Function for up arrow
+//Function for Up arrow
 function upArrowF() {
     if (soundMadeOnFlash) {
         let audio = document.getElementById("upAudio");
@@ -89,7 +89,7 @@ function upArrowF() {
     soundMadeOnFlash = true;
     upArrow.style.backgroundColor = "darkSlateBlue";
 }
-//Left arrow
+//Function for Left arrow
 function leftArrowF() {
     if (soundMadeOnFlash) {
         let audio = document.getElementById("leftAudio");
@@ -98,7 +98,7 @@ function leftArrowF() {
     soundMadeOnFlash = true;
     leftArrow.style.backgroundColor = "darkSlateBlue";
 }
-//Right arrow
+//Function for Right arrow
 function rightArrowF() {
     if (soundMadeOnFlash) {
         let audio = document.getElementById("rightAudio");
@@ -207,24 +207,6 @@ if (scoreSave == null) {
     highScore = parseInt(scoreSave);
 }
 
-/**Saving high score to highscore leader board still to be implemented sucessfully
-
-const saveHighScore = document.querySelector("#saveHighScore");
-localStorage.getElementById = "displayHighScore";
-localStorage.getElementById = "name";
-localStorage.setItem('name', savename);
-localStorage.setItem('saveHighScore', savescore);
-
-
-localStorage.getElementById = "name";
-localStorage.setItem('name', savename);
-document.getElementById("getHighScore").innerHTML = highScore;*/
-
-function saveHighScoreOnClick() {
-    let name = document.getElementById("name");
-    let displayName = name.value;
-}
-
 //hasWon game function
 function winGame() {
     flashColor();
@@ -240,12 +222,3 @@ function gameover() {
     swal({ title: "GAME OVER!", text: "YOU ARE LOST IN THE DARK", button: false, timer: 3000 });
     hasLost = true;
 }
-
-/**Mute function still to be implemented sucessfully
- document.getElementById("mute").muted = !document.getElementById(
-      "mute"
-    ).muted;
-
-    ("mute").addEventListener("click", () => {
-  mute();
-});*/
