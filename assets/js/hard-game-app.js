@@ -88,7 +88,7 @@ function gameTurn() {
 //Function for up arrow
 function upArrowF() {
     if (noise) {
-        let audio = document.getElementById("forwardAudio");
+        let audio = document.getElementById("upAudio");
         audio.play();
     }
     noise = true;
@@ -97,7 +97,7 @@ function upArrowF() {
 //Function for upleft arrow
 function upleftArrowF() {
     if (noise) {
-        let audio = document.getElementById("forwardAudio");
+        let audio = document.getElementById("upAudio");
         audio.play();
     }
     noise = true;
@@ -106,7 +106,7 @@ function upleftArrowF() {
 //Function for upright arrow
 function uprightArrowF() {
     if (noise) {
-        let audio = document.getElementById("forwardAudio");
+        let audio = document.getElementById("upAudio");
         audio.play();
     }
     noise = true;
@@ -115,7 +115,7 @@ function uprightArrowF() {
 //Function for left arrow
 function leftArrowF() {
     if (noise) {
-        let audio = document.getElementById("forwardAudio");
+        let audio = document.getElementById("upAudio");
         audio.play();
     }
     noise = true;
@@ -124,7 +124,7 @@ function leftArrowF() {
 //Function for right arrow
 function rightArrowF() {
     if (noise) {
-        let audio = document.getElementById("forwardAudio");
+        let audio = document.getElementById("upAudio");
         audio.play();
     }
     noise = true;

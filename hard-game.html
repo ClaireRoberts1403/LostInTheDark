@@ -5,22 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="Description" content="Lost in the Dark. An atmospheric memory game" />
-        <title>Lost in the Dark</title>
+        <title>Really Lost in the Dark</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-        <link rel="stylesheet" media="screen and (min-width: 750px)" href="./assets/css/large-screen.css" />
-        <link rel="stylesheet" media="screen and (max-width: 750px)" href="./assets/css/small-screen.css" />
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="./assets/css/large-screen.css" />
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="./assets/css/small-screen.css" />
         <link rel="icon" href="./assets/images/favicon.png" />
         
         <audio id="upAudio">
             <source src="./assets/audio/up.wav" />
         </audio>
-        <audio id="leftAudio">
-            <source src="./assets/audio/left.wav" />
-        </audio>
-        <audio id="rightAudio">
-            <source src="./assets/audio/right.wav" />
-        </audio>
-    </head>
+   </head>
 
     <body>
         <div class="gameSize">
@@ -33,12 +27,16 @@
 
                     <span class="level">Level : <span id="level"></span></span>
                 </nav>
-                <h1 class="gameTitle">Lost in the Dark</h1>
+                <h1>Really Lost in the Dark</h1>
             </header>
             <!--Game made of containers-->
             <div class="container-fluid">
-                <div class="row">
+                <div class="row upperArrows">
+                    <img src="./assets/images/upleft.png" id="upleftArrow" alt="UPLEFT" />
+
                     <img src="./assets/images/upArrow.png" id="upArrow" alt="UP" />
+
+                    <img src="./assets/images/upright.png" id="uprightArrow" alt="UPRIGHT" />
                 </div>
                 <div class="container-fluid">
                     <div class="row" id="leftRight">
@@ -48,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
+            <div class="container">
                 <button type="button" class="btn bg-info text-dark startGameButton" id="startGame">Begin</button>
             </div>
         </div>
@@ -58,16 +56,16 @@
             <div class="links">
                 <div>
                     <a class="homeIcon" href="index.html" aria-label="Home Button"><i class="fas fa-home"></i></a>
-                    <a class="highScoreLink" href="highscores.html">
-                        HighScores
+                    <a class="highScoreLink" href="hard-level-highscores.html">
+                        Really HighScores
                     </a>
                     <a class="help" href="help.html">Help</a>
                 </div>
-                <div class="hard"><a href="hard-game.html">Get Really Lost in the Dark - The harder game</a></div>
+                <div class="hard"><a href="game.html">Too hard? Go back to Lost in the Dark</a></div>
             </div>
         </div>
     </body>
-    <script src="./assets/js/game-app.js" charset="utf-8"></script>
+    <script src="./assets/js/hard-game-app.js" charset="utf-8"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

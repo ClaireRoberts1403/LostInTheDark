@@ -84,7 +84,7 @@ function gameTurn() {
 //Function for up arrow
 function upArrowF() {
     if (noise) {
-        let audio = document.getElementById("forwardAudio");
+        let audio = document.getElementById("upAudio");
         audio.play();
     }
     noise = true;

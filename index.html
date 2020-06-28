@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="Description" content="Lost in the Dark. An atmospheric memory game" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-        <link rel="stylesheet" media="screen and (min-width: 600px)" href="./assets/css/largeScreen.css" />
-        <link rel="stylesheet" media="screen and (max-width: 600px)" href="./assets/css/smallScreen.css" />
-        <link rel="icon" href="./assets/images/favicon.png">
         <title>Lost in the Dark</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="./assets/css/large-screen.css" />
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="./assets/css/small-screen.css" />
+        <link rel="icon" href="./assets/images/favicon.png">
+        
     </head>
 
     <body>
@@ -24,7 +25,7 @@
             </header>
             <!-- Begin button to trigger story modal -->
             <button type="button" class="btn btn-info text-dark beginButton" data-toggle="modal" data-target="#exampleModal">
-                Enter
+                Begin
             </button>
 
             <!-- story modal here -->
@@ -55,7 +56,7 @@
             </div>
             <!--Link to help information in footer-->
             <div class="fixed-bottom">
-                <audio src="./assets/audio/darkAwakening.mp3" autoplay loop>If you are reading this, it is because your browser does not support the audio element.</audio>
+                <audio src="./assets/audio/dark-awakening.mp3" autoplay loop>If you are reading this, it is because your browser does not support the audio element.</audio>
                 <div class="links">
                     <div>
                         <a class="homeIcon" href="index.html" aria-label="Home Button"><i class="fas fa-home"></i></a>
@@ -64,12 +65,12 @@
                         </a>
                         <a class="help" href="help.html">Help</a>
                     </div>
-                    <div class="hard"><a href="hardgame.html">Get Really Lost in the Dark - The harder game</a></div>
+                    <div class="hard"><a href="hard-game.html">Get Really Lost in the Dark - The harder game</a></div>
                 </div>
             </div>
         </div>
     </body>
-    <script src="./assets/js/app.js" charset="utf-8"></script>
+    <script src="./assets/js/game-app.js" charset="utf-8"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
