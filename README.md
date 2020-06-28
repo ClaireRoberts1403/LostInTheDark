@@ -81,7 +81,7 @@ Testing was carried out throughout the build, issues can be seen through the tim
 - Code ran through browsers compatability tester. I used [Do is use?](http://doiuse.herokuapp.com/) Found less than 1% compatability issues with other browsers. 
 - Code ran through html mark up validator. I used [validator](https://validator.w3.org/) It highlighted a issue with a button being use with a link. This was fix by styling the link as a button.
 - Testing through mobiReady.[Mobiready](https://ready.mobi/) highlight a lack of favicon and issues with CSS not rendering the background image. Issue due to adding a background color if image failed.
-- Responsive testing. [I used responsive test tool](http://responsivetesttool.com/) highlighted that the game size may actually be a little small at the mobile size. Also highlight an issue with the scores and level text moving and jumping.
+- Responsive testing. I used [responsive test tool](http://responsivetesttool.com/) highlighted that the game size may actually be a little small at the mobile size. Also highlight an issue with the scores and level text moving and jumping.
 - From the results of responsive testing no stylesheet for tablet size devices is needed.
 - From more user testing on mobile devices in its current format the game seem best suited to computer play using a mouse to touch the arrows. This is something that could be looked into more in the future.
 
