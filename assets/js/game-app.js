@@ -30,7 +30,7 @@ function beginButton() {
     });
 }
 
-//Game play at its start
+//Game play at the start
 function play() {
     hasWon = false;
     hasLost = [];
