@@ -88,7 +88,8 @@ Testing was carried out throughout the build, issues can be seen through the tim
 
 ## Deployment
 
-The game is hosted through github pages. Purely for educational purposes.
+The game is deploy via git hub. To deploy I went to to settings from my repository landing page, I then scrolled down to github pages where I choose the master branch to deploy.
+The game was then deployed through github pages and published at [https://claireroberts1403.github.io/LostInTheDark/].
 
 
 ## Credits
