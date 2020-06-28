@@ -215,7 +215,7 @@ rightArrow.addEventListener("click", () => {
 function check() {
     if (playerSequence[playerSequence.length - 1] !== computerSequence[playerSequence.length - 1]) isCorrect = false;
 
-    if (playerSequence.length == 5 && isCorrect) {
+    if (playerSequence.length == 20 && isCorrect) {
         winGame();
     }
 
