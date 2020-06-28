@@ -9,19 +9,24 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
         <link rel="stylesheet" media="screen and (min-width: 600px)" href="./assets/css/large-screen.css" />
         <link rel="stylesheet" media="screen and (max-width: 600px)" href="./assets/css/small-screen.css" />
-        <link rel="icon" href="./assets/images/favicon.png">
-        
+        <link rel="icon" href="./assets/images/favicon.png" />
     </head>
 
     <body>
+        <audio autoplay id="bgsound">
+            <source src="./assets/audio/dark-awakening.mp3" type="audio/mp3" />
+            If you are reading this, it is because your browser does not support the audio element.
+        </audio>
+        <div class="muteBtns">
+            <button type="button" class="audioButton" onclick="document.getElementById('bgsound').pause();"><i class="fas fa-volume-mute"></i></button>
+            <button type="button" class="audioButton" onclick="document.getElementById('bgsound').play();"><i class="fas fa-volume-up"></i></button>
+        </div>
         <div class="highScoreBoard">
             <h1 class="highScoreH1">Really HighScores</h1>
             <h1 class="highScoreH1">COMING SOON</h1>
-        
 
             <!--Link to help information in footer-->
             <div>
-                <audio src="./assets/audio/dark-awakening.mp3" autoplay loop></audio>
                 <div class="links">
                     <div>
                         <a class="homeIcon" href="index.html" aria-label="Home Button"><i class="fas fa-home"></i></a>

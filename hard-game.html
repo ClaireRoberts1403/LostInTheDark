@@ -10,16 +10,24 @@
         <link rel="stylesheet" media="screen and (min-width: 600px)" href="./assets/css/large-screen.css" />
         <link rel="stylesheet" media="screen and (max-width: 600px)" href="./assets/css/small-screen.css" />
         <link rel="icon" href="./assets/images/favicon.png" />
-        
+
         <audio id="upAudio">
             <source src="./assets/audio/up.wav" />
         </audio>
-   </head>
+    </head>
 
     <body>
         <div class="gameSize">
             <header>
                 <!--header showing current highest score, current score and level number-->
+                <audio autoplay id="bgsound">
+                    <source src="./assets/audio/dark-omen.mp3" type="audio/mp3" />
+                    If you are reading this, it is because your browser does not support the audio element.
+                </audio>
+                <div class="muteBtns">
+                    <button type="button" class="audioButton" onclick="document.getElementById('bgsound').pause();"><i class="fas fa-volume-mute"></i></button>
+                    <button type="button" class="audioButton" onclick="document.getElementById('bgsound').play();"><i class="fas fa-volume-up"></i></button>
+                </div>
                 <nav class="navbar">
                     <span class="highScore">HighScore : <span id="highScore"></span></span>
 
@@ -52,7 +60,6 @@
         </div>
         <!--Link to help information in footer-->
         <div class="fixed-bottom">
-            <audio src="./assets/audio/dark-omen.mp3" autoplay loop></audio>
             <div class="links">
                 <div>
                     <a class="homeIcon" href="index.html" aria-label="Home Button"><i class="fas fa-home"></i></a>

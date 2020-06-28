@@ -48,7 +48,7 @@ To develop a movement game where players move the character in the directions sh
 
 ### Features Left to Implement
 - The highscore page (highscores.html) will display the top five scores and the players name in local storage.
-- Mute button to mute audio.
+- Mute button to mute audio. (Mute background music implemented, although not perfect)
 
 ## Technologies Used
 - HTML5
@@ -59,6 +59,7 @@ To develop a movement game where players move the character in the directions sh
 - [sweetalert Link](https://sweetalert.js.org/) - Used for the alert system.
 - [w3school Link](https://www.w3schools.com/howto) - for some styling.
 - [2createawebsite Link](http://www.2createawebsite.com/enhance/adding-music.html) - how to embed the music
+- [Webplatform Link](https://webplatform.github.io/docs/html/elements/bgSound/) - how to mute embeded music
 
 
 ## Testing
@@ -84,12 +85,13 @@ Testing was carried out throughout the build, issues can be seen through the tim
 - Responsive testing. I used [responsive test tool](http://responsivetesttool.com/) highlighted that the game size may actually be a little small at the mobile size. Also highlight an issue with the scores and level text moving and jumping.
 - From the results of responsive testing no stylesheet for tablet size devices is needed.
 - From more user testing on mobile devices in its current format the game seem best suited to computer play using a mouse to touch the arrows. This is something that could be looked into more in the future.
+- I struggled to find a JavaScript answer to mute the background music but not the arrow flashes, but found one in html its not a perfect fix but it does make the game more accessable by being able to mute the music.
 
 
 ## Deployment
 
 The game is deploy via git hub. To deploy I went to to settings from my repository landing page, I then scrolled down to github pages where I choose the master branch to deploy.
-The game was then deployed through github pages and published at [https://claireroberts1403.github.io/LostInTheDark/].
+The game was then deployed through github pages and published at https://claireroberts1403.github.io/LostInTheDark/.
 
 
 ## Credits

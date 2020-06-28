@@ -72,6 +72,22 @@ span {
     font-size: 1.2em;
 }
 
+.audioButton {
+    font-size: 100%;
+    border: none;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.audioButton:hover {
+    color: rgb(73, 3, 185);
+}
+
+.muteBtns {
+    display: inline-block;
+}
+
 /*modal*/
 
 .storyModal {
@@ -174,17 +190,9 @@ span {
     cursor: pointer;
 }
 
-.spare {
-    display: none;
-}
-
 #leftRight {
     flex-wrap: nowrap;
     margin-bottom: 20px;
-}
-
-.col-sm {
-    padding: 0;
 }
 
 .upperArrows {
@@ -254,35 +262,4 @@ span {
 
 .highScoreH1 {
     margin-top: 5%;
-}
-
-.highScoreInput {
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 100%;
-}
-
-#displayHighStyle {
-    text-align: left;
-}
-
-.submitButton {
-    display: inline-block;
-    font-size: 100%;
-    border: none;
-    text-decoration: none;
-}
-
-.table {
-    color: inherit;
-    text-align: center;
-}
-
-.leagueTable {
-    font-size: 120%;
-}
-
-.highScoreBoard {
-    margin: 0 2%;
-    text-align: center;
 }
